@@ -1,0 +1,16 @@
+:root {
+  /* Text color */
+  --basic-text-color: #000000;
+  --second-text-color: #000000;
+  /* Icon color and bg */
+  /* w */
+  --color-dog-trainer-icon: #76999f;
+  --bg-color-dog-trainer-icon: #ff0079;
+  --hover-color-dog-trainer-icon: #ffdb00;
+  --hover-bg-color-dog-trainer-icon: #4cdb9f;
+  /* d */
+  --color-dog-trainer-icon-dark: #4287f5;
+  --bg-color-dog-trainer-icon-dark: #4287f5;
+  --hover-color-dog-trainer-icon-dark: #4287f5;
+  --hover-bg-color-dog-trainer-icon-dark: #4287f5;
+}
