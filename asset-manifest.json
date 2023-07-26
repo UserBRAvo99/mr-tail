@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/mr-tail/static/css/main.31d6cfe0.css",
+    "main.js": "/mr-tail/static/js/main.34c2188b.js",
+    "index.html": "/mr-tail/index.html",
+    "main.34c2188b.js.map": "/mr-tail/static/js/main.34c2188b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.34c2188b.js"
+  ]
+}
