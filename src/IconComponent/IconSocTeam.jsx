@@ -11,12 +11,12 @@ function IconTeamSocComponent({ facebook, instagram }) {
     <List>
       <Item>
         <Link href={facebook} target="blank" rel="noopener noreferrer">
-          <TiSocialFacebook />
+          Facebook
         </Link>
       </Item>
       <Item>
         <Link href={instagram} target="blank" rel="noopener noreferrer">
-          <TiSocialInstagram />
+          Instagram
         </Link>
       </Item>
       {/* <Item>
@@ -38,42 +38,40 @@ export default IconTeamSocComponent;
 const List = styled.ul`
   display: flex;
   width: 100%;
+  gap: 20px;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 const Item = styled.li`
-  display: block;
-  width: 40px;
-  height: 40px;
   padding-bottom: 20px;
 
-  a {
+  /* a {
     svg {
       position: relative;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
-  }
+  } */
   /* iconFacebook */
-  &:nth-child(1) {
+  /* &:nth-child(1) {
     a {
       svg {
         width: 40px;
         height: 40px;
       }
     }
-  }
+  } */
   /* iconInstagram */
-  &:nth-child(2) {
+  /* &:nth-child(2) {
     a {
       svg {
         width: 34px;
         height: 34px;
       }
     }
-  }
+  } */
   /* iconTelegram */
   /* &:nth-child(3) {
     a {
@@ -100,19 +98,20 @@ const Item = styled.li`
 `;
 
 const Link = styled.a`
-  display: block;
-  border-radius: 50%;
-  position: absolute;
-  width: 40px;
-  height: 40px;
+  /* display: block;
+  border-radius: 50%; */
+  /* position: absolute; */
+  /* width: 40px;
+  height: 40px; */
+
   cursor: pointer;
 
-  background: var(--bg-color-dog-trainer-icon);
+  /* background: var(--bg-color-dog-trainer-icon); */
   color: var(--color-dog-trainer-icon);
 
   &:hover,
   &:focus {
-    background-color: var(--hover-color-dog-trainer-icon);
+    /* background-color: var(--hover-color-dog-trainer-icon); */
     color: var(--hover-bg-color-dog-trainer-icon);
   }
 `;
