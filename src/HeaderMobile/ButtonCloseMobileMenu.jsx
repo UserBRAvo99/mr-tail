@@ -1,10 +1,11 @@
-import { BsChevronDoubleRight } from "react-icons/bs";
+// import { BsChevronDoubleRight } from "react-icons/bs";
+import { IoPawOutline } from "react-icons/io5";
 import { styled } from "styled-components";
 
 function ButtonClose({ onClick }) {
   return (
     <ButtonCloseMenu onClick={onClick}>
-      <BsChevronDoubleRight />
+      <IoPawOutline />
     </ButtonCloseMenu>
   );
 }

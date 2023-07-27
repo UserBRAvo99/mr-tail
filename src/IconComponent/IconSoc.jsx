@@ -7,14 +7,8 @@ import { BiLogoGmail } from "react-icons/bi";
 
 import "../VariableColor/var.css";
 
-export function IconSocComponent({
-  facebook,
-  instagram,
-  telegram,
-  phone,
-  map,
-  mail,
-}) {
+export function IconSocComponent({ data }) {
+  const { facebook, instagram, telegram, phone, map, mail } = data;
   return (
     <WrapperList>
       <List>
@@ -39,7 +33,7 @@ export function IconSocComponent({
           </Link>
         </Item>
         <Item>
-          <Link href={map}>
+          <Link href={map} target="blank" rel="noopener noreferrer">
             <FaMapMarkerAlt />
           </Link>
         </Item>

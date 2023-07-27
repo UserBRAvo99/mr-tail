@@ -5,7 +5,7 @@ import { styled } from "styled-components";
 import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
 
-import LogoPaw from "./Logo";
+// import LogoPaw from "./Logo";
 
 function HeaderMobile() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,7 +35,7 @@ function HeaderMobile() {
   return (
     <>
       <Header>
-        <LogoPaw />
+        {/* <LogoPaw /> */}
         <ButtonOpenMobileMenu onClick={handleClick} />
         <MobileMenuSlide onClick={handleClick} isOpen={mobileMenuOpen} />
       </Header>
