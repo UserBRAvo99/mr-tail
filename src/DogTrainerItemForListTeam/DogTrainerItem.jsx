@@ -1,55 +1,69 @@
 import { styled } from "styled-components";
 import { nanoid } from "nanoid";
-import { IconSocComponent } from "../IconComponent/IconSoc";
+// import { IconSocComponent } from "../IconComponent/IconSoc";
+// import IconTeamSocComponent from "../IconComponent/IconSocTeam";
 
 import dogTrainerData from "../Data/data";
+import IconTeamSocComponent from "../IconComponent/IconSocTeam";
 
 function TeamComponent() {
-  return dogTrainerData.map(
-    ({
-      linkFacebook,
-      linkInstagram,
-      linkTelegram,
-      tel,
-      foto,
-      name,
-      profession,
-    }) => {
-      return (
-        <Section key={nanoid()}>
-          <Img src={foto} alt="user" />
-          <NameTitle>{name}</NameTitle>
-          <Paragraph>{profession}</Paragraph>
-          <IconSocComponent
-            facebook={linkFacebook}
-            instagram={linkInstagram}
-            telegram={linkTelegram}
-            phone={tel}
-          />
-        </Section>
-      );
-    }
+  return (
+    <TeamBlockWrapper>
+      <TeamBlockTitle id="team">Команда</TeamBlockTitle>
+      <List>
+        {dogTrainerData.map(
+          ({ linkFacebook, linkInstagram, linkTelegram, tel, photo, name }) => {
+            return (
+              <Item key={nanoid()}>
+                <Img src={photo} alt="user" />
+                <NameTitle>{name}</NameTitle>
+                <IconTeamSocComponent
+                  facebook={linkFacebook}
+                  instagram={linkInstagram}
+                />
+              </Item>
+            );
+          }
+        )}
+      </List>
+    </TeamBlockWrapper>
   );
 }
 
 export default TeamComponent;
 
-const Section = styled.section`
+const TeamBlockWrapper = styled.section`
+  padding: 15px 10px;
+`;
+
+const TeamBlockTitle = styled.h2`
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+`;
+
+const List = styled.ul``;
+
+const Item = styled.li`
   display: flex;
-  width: 280px;
+  width: 100%;
   min-height: 100px;
+  padding-bottom: 10px;
   flex-direction: column;
   align-items: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border: solid 1px black;
+  box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39);
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 const Img = styled.img`
   width: 100%;
   height: auto;
+  margin-bottom: 16px;
 `;
 
-const NameTitle = styled.h3``;
-
-const Paragraph = styled.p``;
+const NameTitle = styled.h3`
+  margin-bottom: 16px;
+`;
