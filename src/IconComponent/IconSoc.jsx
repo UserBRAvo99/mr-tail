@@ -3,52 +3,71 @@ import { styled } from "styled-components";
 
 import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
 import { FaPhoneAlt, FaTelegramPlane, FaMapMarkerAlt } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
 
 import "../VariableColor/var.css";
 
-export function IconSocComponent({ facebook, instagram, telegram, phone }) {
+export function IconSocComponent({
+  facebook,
+  instagram,
+  telegram,
+  phone,
+  map,
+  mail,
+}) {
   return (
-    <List>
-      <Item>
-        <Link href={facebook} target="blank" rel="noopener noreferrer">
-          <TiSocialFacebook />
-        </Link>
-      </Item>
-      <Item>
-        <Link href={instagram} target="blank" rel="noopener noreferrer">
-          <TiSocialInstagram />
-        </Link>
-      </Item>
-      <Item>
-        <Link href={telegram} target="blank" rel="noopener noreferrer">
-          <FaTelegramPlane />
-        </Link>
-      </Item>
-      <Item>
-        <Link href={"tel:" + phone}>
-          <FaPhoneAlt />
-        </Link>
-      </Item>
-      <Item>
-        <Link href={"tel:" + phone}>
-          <FaMapMarkerAlt />
-        </Link>
-      </Item>
-    </List>
+    <WrapperList>
+      <List>
+        <Item>
+          <Link href={facebook} target="blank" rel="noopener noreferrer">
+            <TiSocialFacebook />
+          </Link>
+        </Item>
+        <Item>
+          <Link href={instagram} target="blank" rel="noopener noreferrer">
+            <TiSocialInstagram />
+          </Link>
+        </Item>
+        <Item>
+          <Link href={telegram} target="blank" rel="noopener noreferrer">
+            <FaTelegramPlane />
+          </Link>
+        </Item>
+        <Item>
+          <Link href={"tel:" + phone}>
+            <FaPhoneAlt />
+          </Link>
+        </Item>
+        <Item>
+          <Link href={map}>
+            <FaMapMarkerAlt />
+          </Link>
+        </Item>
+        <Item>
+          <Link href={"mailto:" + mail}>
+            <BiLogoGmail />
+          </Link>
+        </Item>
+      </List>
+    </WrapperList>
   );
 }
 
+const WrapperList = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 const List = styled.ul`
   display: flex;
-  width: 100%;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  max-width: calc((50px * 3) + 60px);
+  flex-wrap: wrap;
+  gap: 30px;
 `;
 
 const Item = styled.li`
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   padding-bottom: 20px;
 
   a {
@@ -100,22 +119,41 @@ const Item = styled.li`
       }
     }
   }
+  /* iconMap */
+  &:nth-child(5) {
+    a {
+      svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+  /* iconMail */
+  &:nth-child(6) {
+    a {
+      svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
 `;
 
 const Link = styled.a`
   display: block;
+  border: solid 1px rgba(0, 0, 0, 20%);
   border-radius: 50%;
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 
-  background: var(--bg-color-dog-trainer-icon);
-  color: var(--color-dog-trainer-icon);
+  /* background: var(--bg-color-dog-trainer-icon); */
+  color: rgba(0, 0, 0, 70%);
 
   &:hover,
   &:focus {
-    background-color: var(--hover-color-dog-trainer-icon);
+    /* background-color: var(--hover-color-dog-trainer-icon); */
     color: var(--hover-bg-color-dog-trainer-icon);
   }
 `;

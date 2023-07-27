@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 
-import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
+// import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
 // import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 
 import "../VariableColor/var.css";

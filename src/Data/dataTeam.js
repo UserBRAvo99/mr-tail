@@ -4,7 +4,7 @@ import tonia from "./PXL_20230427_102710429.PORTRAIT.jpg";
 import olia from "./PXL_20230421_082835460.PORTRAIT~3.jpg";
 import marisha from "./PXL_20230421_082302026.PORTRAIT.jpg";
 
-const dogTrainerData = [
+const dataDogTrainerData = [
   {
     linkFacebook: "https://www.facebook.com/profile.php?id=100008502870426",
     linkInstagram: "https://www.instagram.com/olena__bondarchuk",
@@ -47,4 +47,4 @@ const dogTrainerData = [
   },
 ];
 
-export default dogTrainerData;
+export default dataDogTrainerData;

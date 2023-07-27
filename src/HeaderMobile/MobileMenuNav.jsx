@@ -36,12 +36,12 @@ const MenuNav = styled.nav`
   width: 100%;
   justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 `;
 const ListNav = styled.ul``;
 const ItemNav = styled.li`
   &:nth-child(n + 1) {
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
     text-align: center;
   }

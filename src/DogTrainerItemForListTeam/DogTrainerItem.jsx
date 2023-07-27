@@ -3,7 +3,7 @@ import { nanoid } from "nanoid";
 // import { IconSocComponent } from "../IconComponent/IconSoc";
 // import IconTeamSocComponent from "../IconComponent/IconSocTeam";
 
-import dogTrainerData from "../Data/data";
+import dataDogTrainerData from "../Data/dataTeam";
 import IconTeamSocComponent from "../IconComponent/IconSocTeam";
 
 function TeamComponent() {
@@ -11,7 +11,7 @@ function TeamComponent() {
     <TeamBlockWrapper id="team">
       <TeamBlockTitle>Команда</TeamBlockTitle>
       <List>
-        {dogTrainerData.map(
+        {dataDogTrainerData.map(
           ({ linkFacebook, linkInstagram, linkTelegram, tel, photo, name }) => {
             return (
               <Item key={nanoid()}>
