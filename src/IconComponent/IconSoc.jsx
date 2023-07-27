@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 
 import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
-import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
+import { FaPhoneAlt, FaTelegramPlane, FaMapMarkerAlt } from "react-icons/fa";
 
 import "../VariableColor/var.css";
 
@@ -27,6 +27,11 @@ export function IconSocComponent({ facebook, instagram, telegram, phone }) {
       <Item>
         <Link href={"tel:" + phone}>
           <FaPhoneAlt />
+        </Link>
+      </Item>
+      <Item>
+        <Link href={"tel:" + phone}>
+          <FaMapMarkerAlt />
         </Link>
       </Item>
     </List>

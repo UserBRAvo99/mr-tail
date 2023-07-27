@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import { styled } from "styled-components";
+import { IconSocComponent } from "../IconComponent/IconSoc";
 
 function MobileMenuNav({ onClick }) {
   return (
@@ -21,6 +22,9 @@ function MobileMenuNav({ onClick }) {
           <a onClick={onClick}>coming soon</a>
         </ItemNav>
       </ListNav>
+      <div>
+        <IconSocComponent />
+      </div>
     </MenuNav>
   );
 }
@@ -31,6 +35,8 @@ const MenuNav = styled.nav`
   display: flex;
   width: 100%;
   justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 const ListNav = styled.ul``;
 const ItemNav = styled.li`
