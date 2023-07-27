@@ -8,14 +8,14 @@ import IconTeamSocComponent from "../IconComponent/IconSocTeam";
 
 function TeamComponent() {
   return (
-    <TeamBlockWrapper>
-      <TeamBlockTitle id="team">Команда</TeamBlockTitle>
+    <TeamBlockWrapper id="team">
+      <TeamBlockTitle>Команда</TeamBlockTitle>
       <List>
         {dogTrainerData.map(
           ({ linkFacebook, linkInstagram, linkTelegram, tel, photo, name }) => {
             return (
               <Item key={nanoid()}>
-                <Img src={photo} alt="user" />
+                <Img src={photo} alt={name} />
                 <NameTitle>{name}</NameTitle>
                 <IconTeamSocComponent
                   facebook={linkFacebook}

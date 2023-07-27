@@ -1,26 +1,12 @@
 import { css, styled } from "styled-components";
 import ButtonClose from "./ButtonCloseMobileMenu";
+import MobileMenuNav from "./MobileMenuNav";
 
 function MobileMenuSlide({ onClick, isOpen }) {
   return (
     <MobileMenu open={isOpen}>
       <ButtonClose onClick={onClick} />
-      {/* <nav>
-        <ul>
-          <li>
-            <a href="#">Про нас</a>
-          </li>
-          <li>
-            <a href="#">Команда</a>
-          </li>
-          <li>
-            <a href="#">Ще щось</a>
-          </li>
-          <li>
-            <a href="#">Ще щось</a>
-          </li>
-        </ul>
-      </nav> */}
+      <MobileMenuNav onClick={onClick} />
     </MobileMenu>
   );
 }

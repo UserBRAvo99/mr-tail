@@ -11,7 +11,11 @@ function HeaderMobile() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   function handleClick(event) {
-    if (event.currentTarget.tagName === "BUTTON") {
+    event.preventDefault();
+    if (
+      event.currentTarget.tagName === "BUTTON" ||
+      event.currentTarget.nodeName === "A"
+    ) {
       toggleMenuOpen();
       scroll();
     }
