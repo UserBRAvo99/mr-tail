@@ -32,7 +32,6 @@ function HeaderMobile() {
     <>
       <Header>
         <LogoPaw />
-
         <ButtonOpenMobileMenu onClick={handleClick} />
         <MobileMenuSlide onClick={handleClick} isOpen={mobileMenuOpen} />
       </Header>

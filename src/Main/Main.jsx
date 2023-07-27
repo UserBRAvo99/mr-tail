@@ -11,7 +11,7 @@ function Main() {
           <HeroTitle>
             <span>Mr</span>Tail
           </HeroTitle>
-          <p>кінологічна спільнота</p>
+          <Description>кінологічна спільнота</Description>
         </HeroTitleWrapper>
       </Hero>
       <TeamComponent />
@@ -32,9 +32,9 @@ const Hero = styled.div`
 
 const ImgHeader = styled.img`
   z-index: -1;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   margin-bottom: 30px;
 `;
 const HeroTitleWrapper = styled.div`
@@ -49,4 +49,8 @@ const HeroTitle = styled.h1`
   display: flex;
   gap: 10px;
   justify-content: center;
+`;
+const Description = styled.p`
+  align-items: center;
+  text-align: center;
 `;
