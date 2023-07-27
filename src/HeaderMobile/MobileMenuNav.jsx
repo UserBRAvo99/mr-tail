@@ -45,5 +45,6 @@ const ItemNav = styled.li`
     padding: 20px;
     cursor: pointer;
     text-align: center;
+    font-size: 30px;
   }
 `;
