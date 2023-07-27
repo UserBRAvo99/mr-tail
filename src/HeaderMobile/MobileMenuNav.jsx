@@ -17,6 +17,9 @@ function MobileMenuNav({ onClick }) {
             Команда
           </Link>
         </ItemNav>
+        <ItemNav>
+          <a onClick={onClick}>coming soon</a>
+        </ItemNav>
       </ListNav>
     </MenuNav>
   );
@@ -30,4 +33,10 @@ const MenuNav = styled.nav`
   justify-content: center;
 `;
 const ListNav = styled.ul``;
-const ItemNav = styled.li``;
+const ItemNav = styled.li`
+  &:nth-child(n + 1) {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+`;
