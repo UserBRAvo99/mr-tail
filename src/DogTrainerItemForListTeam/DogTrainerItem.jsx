@@ -36,7 +36,7 @@ const TeamBlockWrapper = styled.section`
   padding: 15px 10px;
 `;
 
-const TeamBlockTitle = styled.h2`
+const TeamBlockTitle = styled.h3`
   align-items: center;
   text-align: center;
   margin-bottom: 30px;

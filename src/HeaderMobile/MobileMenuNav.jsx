@@ -20,11 +20,20 @@ function MobileMenuNav({ onClick }) {
           </Link>
         </ItemNav>
         <ItemNav>
-          <a onClick={onClick}>coming soon</a>
+          <Link
+            to="footer"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={onClick}
+          >
+            Контакти
+          </Link>
         </ItemNav>
       </ListNav>
       <div>
-        <IconSocComponent data={dataTrainingCenter} />
+        <IconSocComponent data={dataTrainingCenter} onClick={onClick} />
       </div>
     </MenuNav>
   );

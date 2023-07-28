@@ -1,7 +1,8 @@
 :root {
   /* Text color */
-  --basic-text-color: #000000;
+  --basic-text-color-black: #000000;
   --second-text-color: #000000;
+  --basic-text-color-white: #ffffff;
   /* Icon color and bg */
   /* w */
   --color-dog-trainer-icon: #76999f;
@@ -13,4 +14,7 @@
   --bg-color-dog-trainer-icon-dark: #4287f5;
   --hover-color-dog-trainer-icon-dark: #4287f5;
   --hover-bg-color-dog-trainer-icon-dark: #4287f5;
+  /* Footer */
+  --bg-color-footer: rgba(0, 0, 0, 30%);
+  --bg-color-footer-icon: #ffffff;
 }

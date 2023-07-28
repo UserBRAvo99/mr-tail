@@ -7,38 +7,65 @@ import { BiLogoGmail } from "react-icons/bi";
 
 import "../VariableColor/var.css";
 
-export function IconSocComponent({ data }) {
+export function IconSocComponent({ data, onClick }) {
   const { facebook, instagram, telegram, phone, map, mail } = data;
+
   return (
     <WrapperList>
       <List>
         <Item>
-          <Link href={facebook} target="blank" rel="noopener noreferrer">
+          <Link
+            href={facebook}
+            target="blank"
+            rel="noopener noreferrer"
+            // onClick={onClick}
+          >
             <TiSocialFacebook />
           </Link>
         </Item>
         <Item>
-          <Link href={instagram} target="blank" rel="noopener noreferrer">
+          <Link
+            href={instagram}
+            target="blank"
+            rel="noopener noreferrer"
+            // onClick={onClick}
+          >
             <TiSocialInstagram />
           </Link>
         </Item>
         <Item>
-          <Link href={telegram} target="blank" rel="noopener noreferrer">
+          <Link
+            href={telegram}
+            target="blank"
+            rel="noopener noreferrer"
+            // onClick={onClick}
+          >
             <FaTelegramPlane />
           </Link>
         </Item>
         <Item>
-          <Link href={"tel:" + phone}>
+          <Link
+            href={"tel:" + phone}
+            // onClick={onClick}
+          >
             <FaPhoneAlt />
           </Link>
         </Item>
         <Item>
-          <Link href={map} target="blank" rel="noopener noreferrer">
+          <Link
+            href={map}
+            target="blank"
+            rel="noopener noreferrer"
+            // onClick={onClick}
+          >
             <FaMapMarkerAlt />
           </Link>
         </Item>
         <Item>
-          <Link href={"mailto:" + mail}>
+          <Link
+            href={"mailto:" + mail}
+            // onClick={onClick}
+          >
             <BiLogoGmail />
           </Link>
         </Item>
