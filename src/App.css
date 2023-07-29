@@ -12,6 +12,7 @@ body {
 .no-scroll {
   overflow: scroll;
 }
+
 ul,
 li {
   list-style: none;

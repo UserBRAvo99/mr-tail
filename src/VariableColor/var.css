@@ -18,3 +18,7 @@
   --bg-color-footer: rgba(0, 0, 0, 30%);
   --bg-color-footer-icon: #ffffff;
 }
+
+.visible {
+  display: flex;
+}

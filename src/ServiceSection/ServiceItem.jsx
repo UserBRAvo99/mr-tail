@@ -1,37 +1,37 @@
+import { nanoid } from "nanoid";
+import { MdReadMore } from "react-icons/md";
 import { css, styled } from "styled-components";
-import data from "../Data/dataServiceInfo";
-import { useState } from "react";
 
-function ServiceSection() {
-  const [infoSectionOpen, setInfoSectionOpen] = useState(false);
+import "../index.css";
 
-  function handleClick(event) {
-    console.dir(event.currentTarget);
-    toggle();
-  }
-
-  function toggle() {
-    setInfoSectionOpen(!infoSectionOpen);
-  }
-  const { image, title, text } = data[0];
+function ServiceItem({ data, onClick, open }) {
   return (
     <ListSection>
-      <ItemSection className="container" onClick={handleClick} id={1}>
-        <Image src={image} alt="" />
-        <WrapperTitle>
-          <Title>{title}</Title>
-        </WrapperTitle>
-        <WrapperInfo open={infoSectionOpen}>
-          {/* <TitleInfo>{title}</TitleInfo> */}
-          <ParagraphInfo>{text}</ParagraphInfo>
-        </WrapperInfo>
-      </ItemSection>
+      {data.map(({ image, title, text, id }) => {
+        return (
+          <ItemSection id={id} key={nanoid()} onClick={onClick}>
+            <Image src={image} alt="" />
+            <WrapperTitle>
+              <Title>{title}</Title>
+              <TitleIcon>
+                <MdReadMore />
+              </TitleIcon>
+            </WrapperTitle>
+            <WrapperInfo>
+              <ParagraphInfo>{text}</ParagraphInfo>
+            </WrapperInfo>
+          </ItemSection>
+        );
+      })}
     </ListSection>
   );
 }
-export default ServiceSection;
+
+export default ServiceItem;
 
 const ListSection = styled.ul`
+  display: flex;
+  flex-direction: column;
   width: 100%;
 `;
 
@@ -40,20 +40,22 @@ const ItemSection = styled.li`
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 20px;
   /* box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39); */
+  cursor: pointer;
 `;
 const Image = styled.img`
   width: 100%;
-  height: auto;
+  height: 350px;
   object-fit: cover;
 `;
 
 const WrapperTitle = styled.div`
   display: flex;
   justify-content: center;
+
   position: absolute;
   padding: 10px 0;
   top: 80%;
@@ -61,11 +63,23 @@ const WrapperTitle = styled.div`
   align-items: center;
   width: calc(100% - 20px);
   backdrop-filter: blur(10px);
+  cursor: pointer;
 `;
 
 const Title = styled.h3`
+  margin: auto 0;
   letter-spacing: 0.2em;
   color: var(--basic-text-color-white);
+`;
+
+const TitleIcon = styled.span`
+  width: 40px;
+  height: 40px;
+  svg {
+    width: 40px;
+    height: 40px;
+    color: var(--basic-text-color-white);
+  }
 `;
 
 const WrapperInfo = styled.div`

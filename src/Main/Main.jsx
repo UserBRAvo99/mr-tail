@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import TeamComponent from "../DogTrainerItemForListTeam/DogTrainerItem";
 import photoHeaderMobile from "../Data/dog.png";
-import ServiceSection from "../ServiceSection/ServiceSection";
+import ServiceSection from "../ServiceSection/ServiceList";
 
 function Main() {
   return (
