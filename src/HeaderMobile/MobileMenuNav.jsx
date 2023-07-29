@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { styled } from "styled-components";
-import { IconSocComponent } from "../IconComponent/IconSoc";
-import dataTrainingCenter from "../Data/dataTrainingCenter";
+// import { IconSocComponent } from "../IconComponent/IconSoc";
+// import dataTrainingCenter from "../Data/dataTrainingCenter";
 
 function MobileMenuNav({ onClick }) {
   return (
@@ -31,14 +31,22 @@ function MobileMenuNav({ onClick }) {
             Контакти
           </Link>
         </ItemNav>
+        <ItemNav>
+          <Link
+            to="service"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={onClick}
+          >
+            Послуги
+          </Link>
+        </ItemNav>
       </ListNav>
-      <div>
-        <IconSocComponent data={dataTrainingCenter} onClick={onClick} />
-      </div>
     </MenuNav>
   );
 }
-
 export default MobileMenuNav;
 
 const MenuNav = styled.nav`

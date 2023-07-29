@@ -4,52 +4,64 @@ import { css, styled } from "styled-components";
 
 import "../index.css";
 
-function ServiceItem({ data, onClick, open }) {
+function ServiceItem({ data, onClick }) {
   return (
-    <ListSection>
-      {data.map(({ image, title, text, id }) => {
-        return (
-          <ItemSection id={id} key={nanoid()} onClick={onClick}>
-            <Image src={image} alt="" />
-            <WrapperTitle>
-              <Title>{title}</Title>
-              <TitleIcon>
-                <MdReadMore />
-              </TitleIcon>
-            </WrapperTitle>
-            <WrapperInfo>
-              <ParagraphInfo>{text}</ParagraphInfo>
-            </WrapperInfo>
-          </ItemSection>
-        );
-      })}
-    </ListSection>
+    <WrapperBlock id="service">
+      <Title>Послуги</Title>
+      <ListSection>
+        {data.map(({ image, title, text, id }) => {
+          return (
+            <ItemSection id={id} key={nanoid()} onClick={onClick}>
+              <Image src={image} alt="" />
+              <WrapperTitle>
+                <TitleSection>{title}</TitleSection>
+                <TitleIcon>
+                  <MdReadMore />
+                </TitleIcon>
+              </WrapperTitle>
+              <WrapperInfo>
+                <ParagraphInfo>{text}</ParagraphInfo>
+              </WrapperInfo>
+            </ItemSection>
+          );
+        })}
+      </ListSection>
+    </WrapperBlock>
   );
 }
 
 export default ServiceItem;
 
+const WrapperBlock = styled.div`
+  padding: 20px 10px;
+`;
+
+const Title = styled.h2`
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+`;
+
 const ListSection = styled.ul`
   display: flex;
   flex-direction: column;
+
   width: 100%;
 `;
 
 const ItemSection = styled.li`
   position: relative;
-  display: block;
+  display: flex;
   width: 100%;
   height: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 20px;
-  /* box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39); */
+  box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39);
   cursor: pointer;
+  margin-bottom: 20px;
 `;
 const Image = styled.img`
   width: 100%;
-  height: 350px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 `;
 
 const WrapperTitle = styled.div`
@@ -66,7 +78,7 @@ const WrapperTitle = styled.div`
   cursor: pointer;
 `;
 
-const Title = styled.h3`
+const TitleSection = styled.h3`
   margin: auto 0;
   letter-spacing: 0.2em;
   color: var(--basic-text-color-white);
@@ -88,19 +100,11 @@ const WrapperInfo = styled.div`
   flex-direction: column;
   justify-content: space-around;
   top: 0;
-  right: 10px;
-  width: calc(100% - 20px);
+  right: 0;
+  width: calc(100%);
   height: 100%;
   backdrop-filter: blur(10px);
   padding: 10px;
-  /* box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39); */
-  ${(props) =>
-    props.open &&
-    css`
-      /* transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-      transform: translateX(0); */
-      display: flex;
-    `}
 `;
 
 // const TitleInfo = styled.h3`

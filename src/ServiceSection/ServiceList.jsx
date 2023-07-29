@@ -1,5 +1,3 @@
-import { styled } from "styled-components";
-import { useState } from "react";
 import data from "../Data/dataServiceInfo";
 
 import ServiceItem from "./ServiceItem";
