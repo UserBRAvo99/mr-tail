@@ -36,7 +36,7 @@ a {
   padding: 0 15px;
 }
 
-@media (min-width: 575.98px) {
+/* @media (min-width: 575.98px) {
   .container {
     max-width: 540px;
     margin: auto;
@@ -60,4 +60,4 @@ a {
   .container {
     max-width: 1140px;
   }
-}
+} */
