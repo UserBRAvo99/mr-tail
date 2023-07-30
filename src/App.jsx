@@ -9,6 +9,12 @@ import Footer from "./Footer/Footer";
 import { styled } from "styled-components";
 
 function App() {
+  const screenWidth = document.documentElement.scrollHeight;
+
+  window.addEventListener("scroll", (event) => {
+    console.log(window.scrollY);
+  });
+
   return (
     <TimeDiv>
       <HeaderMobile />
