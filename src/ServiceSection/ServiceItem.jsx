@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import { MdReadMore } from "react-icons/md";
-import { css, styled } from "styled-components";
+import { styled } from "styled-components";
 
 import "../index.css";
 

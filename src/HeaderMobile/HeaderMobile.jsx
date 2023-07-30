@@ -4,8 +4,7 @@ import { styled } from "styled-components";
 
 import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
-
-// import LogoPaw from "./Logo";
+import photoHeaderMobile from "../Data/dog.png";
 
 function HeaderMobile() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -34,10 +33,18 @@ function HeaderMobile() {
 
   return (
     <>
+      <MobileMenuSlide onClick={handleClick} isOpen={mobileMenuOpen} />
       <Header>
-        {/* <LogoPaw /> */}
-        <ButtonOpenMobileMenu onClick={handleClick} />
-        <MobileMenuSlide onClick={handleClick} isOpen={mobileMenuOpen} />
+        <Hero>
+          <ButtonOpenMobileMenu onClick={handleClick} />
+          <ImgHeader src={photoHeaderMobile} alt="dog" />
+          <HeroTitleWrapper>
+            <HeroTitle>
+              <span>Mr</span>Tail
+            </HeroTitle>
+            <Description>кінологічна спільнота</Description>
+          </HeroTitleWrapper>
+        </Hero>
       </Header>
     </>
   );
@@ -46,10 +53,40 @@ function HeaderMobile() {
 export default HeaderMobile;
 
 const Header = styled.header`
-  z-index: 2;
-  position: absolute;
+  display: flex;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  position: relative;
+`;
+
+const Hero = styled.div`
   display: flex;
   width: 100%;
   height: auto;
-  justify-content: space-between;
+  position: relative;
+`;
+
+const ImgHeader = styled.img`
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+`;
+const HeroTitleWrapper = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+`;
+
+const HeroTitle = styled.h1`
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+`;
+const Description = styled.p`
+  align-items: center;
+  text-align: center;
 `;

@@ -13,12 +13,15 @@ function ButtonOpenMobileMenu({ onClick }) {
 export default ButtonOpenMobileMenu;
 
 const ButtonOpenMenu = styled.button`
+  position: absolute;
+  top: 15px;
+  right: 15px;
   display: block;
   width: 40px;
   height: 40px;
   border: none;
-  margin-left: auto;
   background-color: inherit;
+  cursor: pointer;
   & svg {
     width: 40px;
     height: 40px;

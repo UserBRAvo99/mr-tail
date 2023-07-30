@@ -108,6 +108,7 @@ const Link = styled.a`
 
   /* background: var(--bg-color-dog-trainer-icon); */
   color: var(--color-dog-trainer-icon);
+  font-size: 1.5rem;
 
   &:hover,
   &:focus {

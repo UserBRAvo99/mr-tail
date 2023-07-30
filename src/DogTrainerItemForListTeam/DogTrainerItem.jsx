@@ -16,11 +16,13 @@ function TeamComponent() {
             return (
               <Item key={nanoid()}>
                 <Img src={photo} alt={name} />
-                <NameTitle>{name}</NameTitle>
-                <IconTeamSocComponent
-                  facebook={linkFacebook}
-                  instagram={linkInstagram}
-                />
+                <WrapperInfoTrainer>
+                  <NameTitle>{name}</NameTitle>
+                  <IconTeamSocComponent
+                    facebook={linkFacebook}
+                    instagram={linkInstagram}
+                  />
+                </WrapperInfoTrainer>
               </Item>
             );
           }
@@ -46,9 +48,9 @@ const List = styled.ul``;
 
 const Item = styled.li`
   display: flex;
+  position: relative;
   width: 100%;
   min-height: 100px;
-  padding-bottom: 10px;
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39);
@@ -61,9 +63,24 @@ const Item = styled.li`
 const Img = styled.img`
   width: 100%;
   height: auto;
-  margin-bottom: 16px;
 `;
 
+const WrapperInfoTrainer = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  top: 80%;
+  right: 10px;
+  align-items: center;
+  width: calc(100% - 20px);
+  backdrop-filter: blur(10px);
+`;
 const NameTitle = styled.h3`
+  letter-spacing: 0.2em;
+  color: var(--basic-text-color-white);
   margin-bottom: 16px;
+  &:last-child {
+    font-size: 16rem;
+  }
 `;
