@@ -45,7 +45,6 @@ const Title = styled.h2`
 const ListSection = styled.ul`
   display: flex;
   flex-direction: column;
-
   width: 100%;
 `;
 
@@ -56,8 +55,12 @@ const ItemSection = styled.li`
   height: auto;
   box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39);
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
+
 const Image = styled.img`
   width: 100%;
   height: 100%;
@@ -67,7 +70,6 @@ const Image = styled.img`
 const WrapperTitle = styled.div`
   display: flex;
   justify-content: center;
-
   position: absolute;
   padding: 10px 0;
   top: 80%;
@@ -107,11 +109,6 @@ const WrapperInfo = styled.div`
   padding: 10px;
 `;
 
-// const TitleInfo = styled.h3`
-//   text-align: center;
-//   align-items: center;
-//   color: var(--basic-text-color-white);
-// `;
 const ParagraphInfo = styled.p`
   text-align: center;
   align-items: center;

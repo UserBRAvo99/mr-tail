@@ -1,7 +1,5 @@
 import { styled } from "styled-components";
 import { nanoid } from "nanoid";
-// import { IconSocComponent } from "../IconComponent/IconSoc";
-// import IconTeamSocComponent from "../IconComponent/IconSocTeam";
 
 import dataDogTrainerData from "../Data/dataTeam";
 import IconTeamSocComponent from "../IconComponent/IconSocTeam";
@@ -75,9 +73,11 @@ const WrapperInfoTrainer = styled.div`
   align-items: center;
   width: calc(100% - 20px);
   backdrop-filter: blur(10px);
+  padding: 20px 0;
 `;
 const NameTitle = styled.h3`
   letter-spacing: 0.2em;
+  font-size: 1.6rem;
   color: var(--basic-text-color-white);
   margin-bottom: 16px;
   &:last-child {

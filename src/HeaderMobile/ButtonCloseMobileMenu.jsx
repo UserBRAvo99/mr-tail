@@ -1,4 +1,3 @@
-// import { BsChevronDoubleRight } from "react-icons/bs";
 import { IoPawOutline } from "react-icons/io5";
 import { styled } from "styled-components";
 

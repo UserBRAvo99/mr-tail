@@ -1,19 +1,10 @@
 import { styled } from "styled-components";
-import TeamComponent from "../DogTrainerItemForListTeam/DogTrainerItem";
+import TeamComponent from "../TeamComponent/TeamComponent";
 import ServiceSection from "../ServiceSection/ServiceList";
 
 function Main() {
   return (
     <MainTag>
-      {/* <Hero>
-        <ImgHeader src={photoHeaderMobile} alt="dog" />
-        <HeroTitleWrapper>
-          <HeroTitle>
-            <span>Mr</span>Tail
-          </HeroTitle>
-          <Description>кінологічна спільнота</Description>
-        </HeroTitleWrapper>
-      </Hero> */}
       <TeamComponent />
       <ServiceSection />
     </MainTag>

@@ -38,12 +38,12 @@ function HeaderMobile() {
         <Hero>
           <ButtonOpenMobileMenu onClick={handleClick} />
           <ImgHeader src={photoHeaderMobile} alt="dog" />
-          <HeroTitleWrapper>
-            <HeroTitle>
+          <ImageTitleWrapper>
+            <ImageTitle>
               <span>Mr</span>Tail
-            </HeroTitle>
+            </ImageTitle>
             <Description>кінологічна спільнота</Description>
-          </HeroTitleWrapper>
+          </ImageTitleWrapper>
         </Hero>
       </Header>
     </>
@@ -73,7 +73,7 @@ const ImgHeader = styled.img`
   height: 100vh;
   object-fit: cover;
 `;
-const HeroTitleWrapper = styled.div`
+const ImageTitleWrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
@@ -81,7 +81,7 @@ const HeroTitleWrapper = styled.div`
   align-items: center;
 `;
 
-const HeroTitle = styled.h1`
+const ImageTitle = styled.h1`
   display: flex;
   gap: 10px;
   justify-content: center;
