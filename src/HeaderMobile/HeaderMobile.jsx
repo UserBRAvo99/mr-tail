@@ -6,6 +6,8 @@ import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
 import photoHeaderMobile from "../Data/dog.png";
 
+import { IoPaw } from "react-icons/io5";
+
 function HeaderMobile() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -40,7 +42,8 @@ function HeaderMobile() {
           <ImgHeader src={photoHeaderMobile} alt="dog" />
           <ImageTitleWrapper>
             <ImageTitle>
-              <span>Mr</span>Tail
+              Mr.Tail
+              <IoPaw />
             </ImageTitle>
             <Description>кінологічна спільнота</Description>
           </ImageTitleWrapper>
@@ -83,10 +86,25 @@ const ImageTitleWrapper = styled.div`
 
 const ImageTitle = styled.h1`
   display: flex;
+  position: relative;
   gap: 10px;
   justify-content: center;
+  color: rgb(88, 50, 115);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: bold;
+  & svg {
+    position: absolute;
+    top: 32px;
+    right: 46px;
+    color: white;
+    width: 11px;
+    height: 11px;
+  }
 `;
+
 const Description = styled.p`
   align-items: center;
   text-align: center;
+  font-size: 20px;
 `;

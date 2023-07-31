@@ -20,6 +20,7 @@ const ButtonOpenMenu = styled.button`
   height: 40px;
   border: none;
   background-color: inherit;
+  color: rgb(39, 30, 59);
   cursor: pointer;
   & svg {
     width: 40px;

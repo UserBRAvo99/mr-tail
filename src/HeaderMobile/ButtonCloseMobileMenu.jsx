@@ -20,6 +20,7 @@ const ButtonCloseMenu = styled.button`
   height: 40px;
   border: none;
   background-color: inherit;
+  color: rgb(39, 30, 59);
   & svg {
     width: 40px;
     height: 40px;

@@ -40,6 +40,7 @@ const Title = styled.h2`
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 2.2rem;
 `;
 
 const ListSection = styled.ul`

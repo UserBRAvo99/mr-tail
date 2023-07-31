@@ -16,11 +16,13 @@ function App() {
   });
 
   return (
-    <TimeDiv>
-      <HeaderMobile />
-      <Main />
+    <>
+      <TimeDiv>
+        <HeaderMobile />
+        <Main />
+      </TimeDiv>
       <Footer />
-    </TimeDiv>
+    </>
   );
 }
 

@@ -40,6 +40,7 @@ const TeamBlockTitle = styled.h3`
   align-items: center;
   text-align: center;
   margin-bottom: 30px;
+  font-size: 2.2rem;
 `;
 
 const List = styled.ul``;

@@ -19,7 +19,7 @@ const MobileMenu = styled.div`
   width: 100vw;
   height: 100vh;
   padding: 70px 10px 10px 10px;
-  background-color: pink;
+  background-color: rgb(213, 182, 226);
   top: 0;
   left: 0;
   /* transform: translateX(+100%);

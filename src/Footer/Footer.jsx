@@ -20,7 +20,7 @@ const FooterTag = styled.footer`
   padding: 20px 0;
   width: 100%;
   height: auto;
-  border-top: solid 1px var(--bg-color-footer);
+  background-color: rgb(213, 182, 226);
 `;
 const WrapperContacts = styled.div`
   display: flex;
