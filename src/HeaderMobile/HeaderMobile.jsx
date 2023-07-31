@@ -43,7 +43,7 @@ function HeaderMobile() {
           <ImageTitleWrapper>
             <ImageTitle>
               Mr.Tail
-              <IoPaw />
+              {/* <IoPaw /> */}
             </ImageTitle>
             <Description>кінологічна спільнота</Description>
           </ImageTitleWrapper>
@@ -93,14 +93,14 @@ const ImageTitle = styled.h1`
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 50px;
   font-weight: bold;
-  & svg {
+  /* & svg {
     position: absolute;
     top: 32px;
     right: 46px;
     color: white;
     width: 11px;
     height: 11px;
-  }
+  } */
 `;
 
 const Description = styled.p`
