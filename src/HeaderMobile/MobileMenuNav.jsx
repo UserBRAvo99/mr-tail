@@ -1,7 +1,5 @@
 import { Link } from "react-scroll";
 import { styled } from "styled-components";
-// import { IconSocComponent } from "../IconComponent/IconSoc";
-// import dataTrainingCenter from "../Data/dataTrainingCenter";
 
 function MobileMenuNav({ onClick }) {
   return (
