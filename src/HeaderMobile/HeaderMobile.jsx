@@ -6,8 +6,6 @@ import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
 import photoHeaderMobile from "../Data/dog.png";
 
-import { IoPaw } from "react-icons/io5";
-
 function HeaderMobile() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -93,14 +91,6 @@ const ImageTitle = styled.h1`
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 50px;
   font-weight: bold;
-  /* & svg {
-    position: absolute;
-    top: 32px;
-    right: 46px;
-    color: white;
-    width: 11px;
-    height: 11px;
-  } */
 `;
 
 const Description = styled.p`
