@@ -7,12 +7,13 @@ import Main from "./Main/Main";
 import "./App.css";
 import Footer from "./Footer/Footer";
 import { styled } from "styled-components";
+import ContactUs from "./ContactUs/ContactUs";
 
 function App() {
-  const screenWidth = document.documentElement.scrollHeight;
+  // const screenWidth = document.documentElement.scrollHeight;
 
   window.addEventListener("scroll", (event) => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
   });
 
   return (
@@ -20,7 +21,9 @@ function App() {
       <TimeDiv>
         <HeaderMobile />
         <Main />
+        <ContactUs />
       </TimeDiv>
+
       <Footer />
     </>
   );
