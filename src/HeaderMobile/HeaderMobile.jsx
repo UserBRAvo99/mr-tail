@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 
 import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
-import photoHeaderMobile from "../Data/dog.png";
+import photoHeaderMobile from "../Data/dog.jpg";
 
 function HeaderMobile() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
