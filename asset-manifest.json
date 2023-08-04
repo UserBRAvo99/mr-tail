@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mr-tail/static/css/main.b032fe8d.css",
-    "main.js": "/mr-tail/static/js/main.51bfe5c4.js",
+    "main.css": "/mr-tail/static/css/main.9278439f.css",
+    "main.js": "/mr-tail/static/js/main.372d9e78.js",
     "static/media/PXL_20230427_102710429.PORTRAIT.jpg": "/mr-tail/static/media/PXL_20230427_102710429.PORTRAIT.3a077aba07100a394c97.jpg",
     "static/media/PXL_20230421_080926332.PORTRAIT~3.jpg": "/mr-tail/static/media/PXL_20230421_080926332.PORTRAIT~3.7af8247a59e780a4cabe.jpg",
     "static/media/PXL_20230421_075559421.PORTRAIT~2.jpg": "/mr-tail/static/media/PXL_20230421_075559421.PORTRAIT~2.760020a1eae332b0de89.jpg",
@@ -9,17 +9,18 @@
     "static/media/PXL_20230421_082835460.PORTRAIT~3.jpg": "/mr-tail/static/media/PXL_20230421_082835460.PORTRAIT~3.58f926cdd6e69cfc993d.jpg",
     "static/media/dog.jpg": "/mr-tail/static/media/dog.72dc3c6f7f4ccc1d8b6d.jpg",
     "static/media/photoDog6.jpeg": "/mr-tail/static/media/photoDog6.fdc356d9f0dc02d8fe6a.jpeg",
+    "static/media/tabyretka.jpg": "/mr-tail/static/media/tabyretka.5d270d1ad113c8586e34.jpg",
     "static/media/photoDog4.jpg": "/mr-tail/static/media/photoDog4.bdf32a9e6eb6b3563174.jpg",
     "static/media/photoDog1.jpg": "/mr-tail/static/media/photoDog1.b8e1230d3736b0d13e9c.jpg",
     "static/media/photoDog5.jpg": "/mr-tail/static/media/photoDog5.ac6dc90e60a65bffa76b.jpg",
     "static/media/photoDog3.jpg": "/mr-tail/static/media/photoDog3.3235c01ca77adae3235d.jpg",
     "static/media/photoDog2.jpg": "/mr-tail/static/media/photoDog2.1a58479ce8cbe3121992.jpg",
     "index.html": "/mr-tail/index.html",
-    "main.b032fe8d.css.map": "/mr-tail/static/css/main.b032fe8d.css.map",
-    "main.51bfe5c4.js.map": "/mr-tail/static/js/main.51bfe5c4.js.map"
+    "main.9278439f.css.map": "/mr-tail/static/css/main.9278439f.css.map",
+    "main.372d9e78.js.map": "/mr-tail/static/js/main.372d9e78.js.map"
   },
   "entrypoints": [
-    "static/css/main.b032fe8d.css",
-    "static/js/main.51bfe5c4.js"
+    "static/css/main.9278439f.css",
+    "static/js/main.372d9e78.js"
   ]
 }
