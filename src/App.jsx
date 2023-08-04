@@ -8,6 +8,7 @@ import "./App.css";
 import Footer from "./Footer/Footer";
 import { styled } from "styled-components";
 import ContactUs from "./ContactUs/ContactUs";
+import SwiperBlock from "./Swiper/Swiper";
 
 function App() {
   // const screenWidth = document.documentElement.scrollHeight;
@@ -22,6 +23,7 @@ function App() {
         <HeaderMobile />
         <Main />
         <ContactUs />
+        <SwiperBlock />
       </TimeDiv>
 
       <Footer />
