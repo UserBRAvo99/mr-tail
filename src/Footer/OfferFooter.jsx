@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 function OfferFooter() {
   return (
     <Wrapper id="offer">
-      <Title>Співпарця</Title>
+      <Title>Співпраця</Title>
       <Form action="">
         <InputWrapper>
           <InputWrapperNameEmail>

@@ -5,16 +5,17 @@ import {
   A11y,
   Keyboard,
   Mousewheel,
+  Autoplay,
 } from "swiper/modules";
 
 import dataDogTrainerData from "../Data/dataTeam";
-import tabyretka from "../Data/tabyretka.jpg";
+import tabyretka from "../Data/tabyretka.png";
 import { styled } from "styled-components";
 import { nanoid } from "nanoid";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/css/autoplay";
 import "swiper/css/mousewheel";
 import "swiper/css/keyboard";
 
@@ -22,21 +23,27 @@ function SwiperBlock() {
   return (
     <WrapperSwiper className="container">
       <Swiper
-        modules={[Navigation, Pagination, A11y, Keyboard, Mousewheel]}
+        modules={[Navigation, Pagination, A11y, Keyboard, Mousewheel, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
+        autoplay={{
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
+        }}
+        delay={800}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => swiper}
       >
         <SwiperSlide>
-          <Img src={tabyretka} />
+          <Image src={tabyretka} />
         </SwiperSlide>
         {dataDogTrainerData.map(({ photo, name }) => {
           return (
             <SwiperSlide key={nanoid()}>
-              <Img src={photo} alt={name} />
+              <Image src={photo} alt={name} />
             </SwiperSlide>
           );
         })}
@@ -52,7 +59,8 @@ const WrapperSwiper = styled.div`
   height: auto;
 `;
 
-const Img = styled.img`
+const Image = styled.img`
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 `;

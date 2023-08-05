@@ -1,8 +1,8 @@
-import lena from "./PXL_20230421_080926332.PORTRAIT~3.jpg";
-import julia from "./PXL_20230421_075559421.PORTRAIT~2.jpg";
-import tonia from "./PXL_20230427_102710429.PORTRAIT.jpg";
+import lena from "./lena.png";
+import julia from "./julia.png";
+import tonia from "./tonia.png";
 import olia from "./PXL_20230421_082835460.PORTRAIT~3.jpg";
-import marisha from "./PXL_20230421_082302026.PORTRAIT.jpg";
+import marisha from "./marisha.png";
 
 const dataDogTrainerData = [
   {

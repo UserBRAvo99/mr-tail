@@ -50,7 +50,7 @@ function MobileMenuNav({ onClick }) {
             duration={500}
             onClick={onClick}
           >
-            Консультацію
+            Консультація
           </Link>
         </ItemNav>
         <ItemNav>
