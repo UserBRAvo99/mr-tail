@@ -6,7 +6,7 @@ const service = "service_4xr33lm";
 const template = "template_ajb7104";
 const publicKey = "OdRGBDnxZk77b-GbW";
 
-function ContactUs() {
+function Consultation() {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -24,7 +24,7 @@ function ContactUs() {
   };
 
   return (
-    <Section>
+    <Section id="сonsultation">
       <Title>Заявка на консультацію</Title>
       <ApplicationForm
         ref={form}
@@ -81,7 +81,7 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default Consultation;
 
 const Section = styled.section`
   padding: 20px 10px;

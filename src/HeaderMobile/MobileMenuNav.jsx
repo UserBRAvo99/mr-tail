@@ -41,6 +41,18 @@ function MobileMenuNav({ onClick }) {
             Послуги
           </Link>
         </ItemNav>
+        <ItemNav>
+          <Link
+            to="сonsultation"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={onClick}
+          >
+            Заявка на консультацію
+          </Link>
+        </ItemNav>
       </ListNav>
     </MenuNav>
   );

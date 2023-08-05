@@ -7,8 +7,9 @@ import Main from "./Main/Main";
 import "./App.css";
 import Footer from "./Footer/Footer";
 import { styled } from "styled-components";
-import ContactUs from "./ContactUs/ContactUs";
+import Consultation from "./ContactUs/ContactUs";
 import SwiperBlock from "./Swiper/Swiper";
+import OfferFooter from "./Footer/OfferFooter";
 
 function App() {
   // const screenWidth = document.documentElement.scrollHeight;
@@ -22,7 +23,7 @@ function App() {
       <TimeDiv>
         <HeaderMobile />
         <Main />
-        <ContactUs />
+        <Consultation />
         <SwiperBlock />
       </TimeDiv>
 
