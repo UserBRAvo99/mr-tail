@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 
 function OfferFooter() {
   return (
-    <Wrapper>
+    <Wrapper id="offer">
       <Title>Співпарця</Title>
       <Form action="">
         <InputWrapper>
