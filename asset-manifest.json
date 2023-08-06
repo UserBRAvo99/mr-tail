@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/mr-tail/static/css/main.9af08543.css",
-    "main.js": "/mr-tail/static/js/main.2369f239.js",
-    "static/media/tonia.png": "/mr-tail/static/media/tonia.acbc46ef4c29fb259a2e.png",
-    "static/media/marisha.png": "/mr-tail/static/media/marisha.6ab00042ab209a08c97d.png",
-    "static/media/julia.png": "/mr-tail/static/media/julia.5c5be3a09c15a3e4f32b.png",
-    "static/media/lena.png": "/mr-tail/static/media/lena.678e0d8a5c1d9e4e08e7.png",
-    "static/media/PXL_20230421_082835460.PORTRAIT~3.jpg": "/mr-tail/static/media/PXL_20230421_082835460.PORTRAIT~3.58f926cdd6e69cfc993d.jpg",
-    "static/media/tabyretka.png": "/mr-tail/static/media/tabyretka.8628e40023d6173d9c70.png",
+    "main.js": "/mr-tail/static/js/main.953a0528.js",
     "static/media/dog.jpg": "/mr-tail/static/media/dog.72dc3c6f7f4ccc1d8b6d.jpg",
     "static/media/photoDog6.jpeg": "/mr-tail/static/media/photoDog6.fdc356d9f0dc02d8fe6a.jpeg",
-    "static/media/photoDog4.jpg": "/mr-tail/static/media/photoDog4.bdf32a9e6eb6b3563174.jpg",
-    "static/media/photoDog1.jpg": "/mr-tail/static/media/photoDog1.b8e1230d3736b0d13e9c.jpg",
-    "static/media/photoDog5.jpg": "/mr-tail/static/media/photoDog5.ac6dc90e60a65bffa76b.jpg",
-    "static/media/photoDog3.jpg": "/mr-tail/static/media/photoDog3.3235c01ca77adae3235d.jpg",
-    "static/media/photoDog2.jpg": "/mr-tail/static/media/photoDog2.1a58479ce8cbe3121992.jpg",
+    "static/media/tabyretka.jpg": "/mr-tail/static/media/tabyretka.4234b3ff8f695a170531.jpg",
+    "static/media/olia.jpg": "/mr-tail/static/media/olia.c1d82c1c4155d5105784.jpg",
+    "static/media/tonia.jpg": "/mr-tail/static/media/tonia.5d764d177ac2366fbb3a.jpg",
+    "static/media/lena.jpg": "/mr-tail/static/media/lena.6d7f6bf1995a95b35e4c.jpg",
+    "static/media/julia.jpg": "/mr-tail/static/media/julia.b1113acd199bd43dcf95.jpg",
+    "static/media/marisha.jpg": "/mr-tail/static/media/marisha.9ca1c69890567a607d1c.jpg",
+    "static/media/photoDog4.jpg": "/mr-tail/static/media/photoDog4.40fade6ae508c9e340f1.jpg",
+    "static/media/photoDog1.jpg": "/mr-tail/static/media/photoDog1.23ccd62d2fa5cbafe849.jpg",
+    "static/media/photoDog5.jpg": "/mr-tail/static/media/photoDog5.04b4bb2fd83e607fc108.jpg",
+    "static/media/photoDog3.jpg": "/mr-tail/static/media/photoDog3.079e19c3315be814f72c.jpg",
+    "static/media/photoDog2.jpg": "/mr-tail/static/media/photoDog2.9630a25cac340985c3e2.jpg",
     "index.html": "/mr-tail/index.html",
     "main.9af08543.css.map": "/mr-tail/static/css/main.9af08543.css.map",
-    "main.2369f239.js.map": "/mr-tail/static/js/main.2369f239.js.map"
+    "main.953a0528.js.map": "/mr-tail/static/js/main.953a0528.js.map"
   },
   "entrypoints": [
     "static/css/main.9af08543.css",
-    "static/js/main.2369f239.js"
+    "static/js/main.953a0528.js"
   ]
 }
