@@ -33,7 +33,7 @@ function HeaderMobile() {
 
   return (
     <>
-      <MobileMenuSlide onClick={handleClick} isOpen={mobileMenuOpen} />
+      <MobileMenuSlide onClick={handleClick} open={mobileMenuOpen} />
       <Header>
         <Hero>
           <ButtonOpenMobileMenu onClick={handleClick} />
