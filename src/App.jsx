@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import HeaderMobile from "./HeaderMobile/HeaderMobile";
 
@@ -9,10 +9,35 @@ import Footer from "./Footer/Footer";
 import { styled } from "styled-components";
 import ModalConsultation from "./ModalConsultation/ModalConsultation";
 import { ToastContainer } from "react-toastify";
-// import ButtonUp from "./ButtonUp/ButtonUp";
+import ButtonUp from "./ButtonUp/ButtonUp";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
+
+  //
+  //
+  const [isVisibleBtn, setIsVisibleBtn] = useState(false);
+  const goToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
+  const listenToScroll = () => {
+    let heightToHidden = 250;
+
+    const winScroll = document.documentElement.scrollTop;
+
+    if (winScroll > heightToHidden) {
+      setIsVisibleBtn(true);
+    } else {
+      setIsVisibleBtn(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    // return () => window.removeEventListener("scroll", listenToScroll);
+  }, []);
+  //
+  //
 
   const handleClickModal = (event) => {
     console.log(event.target.id);
@@ -37,17 +62,11 @@ function App() {
     }
     document.body.style.overflow = "scroll";
   }
-  const ButtonUpScroll = () =>
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 400) return console.log(true);
-      return console.log(false);
-    });
-  console.log(ButtonUpScroll());
 
   return (
     <>
       <ToastContainer />
-      {/* <ButtonUp /> */}
+      <ButtonUp onClick={goToTop} visible={isVisibleBtn} />
       <ModalConsultation
         isOpen={handleClickModal}
         toggleModal={toggleModal}
