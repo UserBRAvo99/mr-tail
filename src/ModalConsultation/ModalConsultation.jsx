@@ -1,10 +1,11 @@
 import React from "react";
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 import ContactUs from "../ContactUs/ContactUs";
 
-function ModalConsultation({ isOpen, toggleModal, modalOpen }) {
+function ModalConsultation({ isOpen, toggleModal, modal }) {
+  //   console.log(modal);
   return (
-    <OverlayWrapper onClick={isOpen} id="modal">
+    <OverlayWrapper onClick={isOpen} id="modal" modal={modal.toString()}>
       <ModalWrapper>
         <ContactUs onClick={isOpen} toggleModal={toggleModal} />
       </ModalWrapper>
@@ -15,14 +16,22 @@ function ModalConsultation({ isOpen, toggleModal, modalOpen }) {
 export default ModalConsultation;
 
 const OverlayWrapper = styled.div`
-  z-index: 100;
-  position: fixed;
-  display: block;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(10px);
-  ${(props) => {
-    console.log(props);
+  ${({ modal }) => {
+    if (modal === "true") {
+      return css`
+        z-index: 100;
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(10px);
+        transition: all 0.8s ease 0s;
+      `;
+    }
+    return css`
+      opacity: 0;
+      visibility: hidden;
+    `;
   }}
 `;
 
