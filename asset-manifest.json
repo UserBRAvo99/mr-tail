@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mr-tail/static/css/main.fd8fb862.css",
-    "main.js": "/mr-tail/static/js/main.07ee3389.js",
+    "main.css": "/mr-tail/static/css/main.9af08543.css",
+    "main.js": "/mr-tail/static/js/main.965874c4.js",
     "static/media/tonia.png": "/mr-tail/static/media/tonia.acbc46ef4c29fb259a2e.png",
     "static/media/marisha.png": "/mr-tail/static/media/marisha.6ab00042ab209a08c97d.png",
     "static/media/julia.png": "/mr-tail/static/media/julia.5c5be3a09c15a3e4f32b.png",
@@ -16,11 +16,11 @@
     "static/media/photoDog3.jpg": "/mr-tail/static/media/photoDog3.3235c01ca77adae3235d.jpg",
     "static/media/photoDog2.jpg": "/mr-tail/static/media/photoDog2.1a58479ce8cbe3121992.jpg",
     "index.html": "/mr-tail/index.html",
-    "main.fd8fb862.css.map": "/mr-tail/static/css/main.fd8fb862.css.map",
-    "main.07ee3389.js.map": "/mr-tail/static/js/main.07ee3389.js.map"
+    "main.9af08543.css.map": "/mr-tail/static/css/main.9af08543.css.map",
+    "main.965874c4.js.map": "/mr-tail/static/js/main.965874c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd8fb862.css",
-    "static/js/main.07ee3389.js"
+    "static/css/main.9af08543.css",
+    "static/js/main.965874c4.js"
   ]
 }
