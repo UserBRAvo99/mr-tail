@@ -15,7 +15,12 @@ function App() {
   // const screenWidth = document.documentElement.scrollHeight;
 
   const handleClickModal = (event) => {
-    if (event.target.id === "modal" || event.target.id === "modalOpen") {
+    console.log(event.target.id);
+    if (
+      event.target.id === "modal" ||
+      event.target.id === "modalOpen" ||
+      event.target.id === "modalClose"
+    ) {
       toggleModal();
       scroll();
     }
@@ -44,7 +49,6 @@ function App() {
         toggleModal={toggleModal}
         modal={modalOpen}
       />
-
       <TimeDiv>
         <HeaderMobile />
         <Main onClick={handleClickModal} />

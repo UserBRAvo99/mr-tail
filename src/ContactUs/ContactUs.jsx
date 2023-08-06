@@ -5,12 +5,13 @@ import { styled } from "styled-components";
 import { toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import ButtonCloseModal from "../ModalConsultation/ButtonCloseModal";
 
 const service = "service_4xr33lm";
 const template = "template_ajb7104";
 const publicKey = "OdRGBDnxZk77b-GbW";
 
-function Consultation({ toggleModal }) {
+function Consultation({ onClick, toggleModal }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -50,6 +51,7 @@ function Consultation({ toggleModal }) {
   return (
     <>
       <Section>
+        <ButtonCloseModal onClick={onClick} />
         <Title>Заявка на консультацію</Title>
         <ApplicationForm
           ref={form}
@@ -110,7 +112,8 @@ function Consultation({ toggleModal }) {
 export default Consultation;
 
 const Section = styled.section`
-  padding: 30px 30px;
+  position: relative;
+  padding: 60px 30px 30px 30px;
   width: 100%;
 `;
 
