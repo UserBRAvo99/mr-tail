@@ -6,7 +6,7 @@ const service = "service_4xr33lm";
 const template = "template_ajb7104";
 const publicKey = "OdRGBDnxZk77b-GbW";
 
-function Consultation() {
+function Consultation({ toggleModal }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -20,7 +20,9 @@ function Consultation() {
         console.log(error.text);
       }
     );
+
     e.target.reset();
+    toggleModal();
   };
 
   return (
@@ -84,7 +86,8 @@ function Consultation() {
 export default Consultation;
 
 const Section = styled.section`
-  padding: 20px 10px;
+  padding: 30px 30px;
+  width: 100%;
 `;
 
 const Title = styled.h2`

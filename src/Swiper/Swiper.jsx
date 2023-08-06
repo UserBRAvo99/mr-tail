@@ -27,6 +27,7 @@ function SwiperBlock() {
         spaceBetween={50}
         slidesPerView={1}
         navigation
+        loop
         autoplay={{
           stopOnLastSlide: false,
           disableOnInteraction: true,

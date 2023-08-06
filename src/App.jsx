@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import HeaderMobile from "./HeaderMobile/HeaderMobile";
 
@@ -7,12 +7,30 @@ import Main from "./Main/Main";
 import "./App.css";
 import Footer from "./Footer/Footer";
 import { styled } from "styled-components";
-import Consultation from "./ContactUs/ContactUs";
-import SwiperBlock from "./Swiper/Swiper";
-import OfferFooter from "./Footer/OfferFooter";
+import ModalConsultation from "./ModalConsultation/ModalConsultation";
 
 function App() {
+  const [modalOpen, setModalOpen] = useState(false);
   // const screenWidth = document.documentElement.scrollHeight;
+
+  const handleClickModal = (event) => {
+    console.dir(event.target.id);
+    if (event.target.id === "modal" || event.target.id === "modalOpen") {
+      toggleModal();
+      scroll();
+    }
+  };
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+  };
+  function scroll() {
+    if (!modalOpen) {
+      document.body.style.overflow = "hidden";
+      return;
+    }
+    document.body.style.overflow = "scroll";
+  }
 
   window.addEventListener("scroll", (event) => {
     // console.log(window.scrollY);
@@ -20,13 +38,16 @@ function App() {
 
   return (
     <>
+      {modalOpen && (
+        <ModalConsultation
+          isOpen={handleClickModal}
+          toggleModal={toggleModal}
+        />
+      )}
       <TimeDiv>
         <HeaderMobile />
-        <Main />
-        <Consultation />
-        <SwiperBlock />
+        <Main onClick={handleClickModal} />
       </TimeDiv>
-
       <Footer />
     </>
   );

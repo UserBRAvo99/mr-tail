@@ -1,12 +1,15 @@
 import { styled } from "styled-components";
-import TeamComponent from "../TeamComponent/TeamComponent";
 import ServiceSection from "../ServiceSection/ServiceList";
+import ButtonOpenModal from "../ModalConsultation/ButtonOpenModal";
+import SwiperBlock from "../Swiper/Swiper";
 
-function Main() {
+function Main({ onClick }) {
   return (
     <MainTag>
-      <TeamComponent />
+      {/* <TeamComponent /> */}
+      <SwiperBlock />
       <ServiceSection />
+      <ButtonOpenModal onClick={onClick} />
     </MainTag>
   );
 }

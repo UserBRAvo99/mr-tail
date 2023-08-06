@@ -74,7 +74,6 @@ export default MobileMenuNav;
 const MenuNav = styled.nav`
   display: flex;
   width: 100%;
-  justify-content: center;
   flex-direction: column;
   justify-content: space-around;
 `;
