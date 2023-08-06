@@ -3,7 +3,6 @@ import { css, styled } from "styled-components";
 import ContactUs from "../ContactUs/ContactUs";
 
 function ModalConsultation({ isOpen, toggleModal, modal }) {
-  //   console.log(modal);
   return (
     <OverlayWrapper onClick={isOpen} id="modal" modal={modal.toString()}>
       <ModalWrapper>

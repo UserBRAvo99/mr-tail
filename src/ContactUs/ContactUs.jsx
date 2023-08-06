@@ -2,6 +2,10 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { styled } from "styled-components";
 
+import { toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
+
 const service = "service_4xr33lm";
 const template = "template_ajb7104";
 const publicKey = "OdRGBDnxZk77b-GbW";
@@ -14,10 +18,28 @@ function Consultation({ toggleModal }) {
 
     emailjs.sendForm(service, template, form.current, publicKey).then(
       (result) => {
-        console.log(result.text);
+        toast.success("Дякую, Ваша заявка прийнята", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
       },
       (error) => {
-        console.log(error.text);
+        toast.error("Помилка сервера, спробуйте ще раз.", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
       }
     );
 
@@ -26,60 +48,62 @@ function Consultation({ toggleModal }) {
   };
 
   return (
-    <Section id="сonsultation">
-      <Title>Заявка на консультацію</Title>
-      <ApplicationForm
-        ref={form}
-        onSubmit={sendEmail}
-        name="Заявка на консультацію в Mr.Tail"
-      >
-        <WrapperInput>
-          <WrapperInputBlock>
-            {/* <label>Name</label> */}
-            <Input type="name" name="user_name" placeholder="Ім'я" required />
-            {/* <label>Phone</label> */}
-            <Input
-              type="phone"
-              name="user_phone"
-              placeholder="Мобільний номер"
-              required
-            />
-            {/* <label>Email</label> */}
-            <Input
-              type="email"
-              name="user_email"
-              placeholder="Пошта"
-              required
-            />
-          </WrapperInputBlock>
-          <WrapperInputBlock>
-            {/* <label>Dog name</label> */}
-            <Input
-              type="name"
-              name="dog_name"
-              placeholder="Кличка собаки"
-              required
-            />
-            {/* <label>Dog age</label> */}
-            <Input
-              type="number"
-              name="dog_age"
-              placeholder="Вік собаки"
-              required
-            />
-            {/* <label>Dog breed</label> */}
-            <Input
-              type="text"
-              name="dog_breed"
-              placeholder="Порода собаки"
-              required
-            />
-          </WrapperInputBlock>
-        </WrapperInput>
-        <Textarea name="message" placeholder="Коментар..." />
-        <ButtonForm type="submit" value="Відправити" />
-      </ApplicationForm>
-    </Section>
+    <>
+      <Section>
+        <Title>Заявка на консультацію</Title>
+        <ApplicationForm
+          ref={form}
+          onSubmit={sendEmail}
+          name="Заявка на консультацію в Mr.Tail"
+        >
+          <WrapperInput>
+            <WrapperInputBlock>
+              {/* <label>Name</label> */}
+              <Input type="name" name="user_name" placeholder="Ім'я" required />
+              {/* <label>Phone</label> */}
+              <Input
+                type="phone"
+                name="user_phone"
+                placeholder="Мобільний номер"
+                required
+              />
+              {/* <label>Email</label> */}
+              <Input
+                type="email"
+                name="user_email"
+                placeholder="Пошта"
+                required
+              />
+            </WrapperInputBlock>
+            <WrapperInputBlock>
+              {/* <label>Dog name</label> */}
+              <Input
+                type="name"
+                name="dog_name"
+                placeholder="Кличка собаки"
+                required
+              />
+              {/* <label>Dog age</label> */}
+              <Input
+                type="number"
+                name="dog_age"
+                placeholder="Вік собаки"
+                required
+              />
+              {/* <label>Dog breed</label> */}
+              <Input
+                type="text"
+                name="dog_breed"
+                placeholder="Порода собаки"
+                required
+              />
+            </WrapperInputBlock>
+          </WrapperInput>
+          <Textarea name="message" placeholder="Коментар..." />
+          <ButtonForm type="submit" value="Відправити" />
+        </ApplicationForm>
+      </Section>
+    </>
   );
 }
 

@@ -8,6 +8,7 @@ import "./App.css";
 import Footer from "./Footer/Footer";
 import { styled } from "styled-components";
 import ModalConsultation from "./ModalConsultation/ModalConsultation";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer />
       <ModalConsultation
         isOpen={handleClickModal}
         toggleModal={toggleModal}
