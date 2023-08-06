@@ -1,8 +1,8 @@
-import lena from "./lena.png";
-import julia from "./julia.png";
-import tonia from "./tonia.png";
-import olia from "./PXL_20230421_082835460.PORTRAIT~3.jpg";
-import marisha from "./marisha.png";
+import lena from "./lena.jpg";
+import julia from "./julia.jpg";
+import tonia from "./tonia.jpg";
+import olia from "./olia.jpg";
+import marisha from "./marisha.jpg";
 
 const dataDogTrainerData = [
   {

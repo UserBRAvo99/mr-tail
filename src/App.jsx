@@ -9,10 +9,10 @@ import Footer from "./Footer/Footer";
 import { styled } from "styled-components";
 import ModalConsultation from "./ModalConsultation/ModalConsultation";
 import { ToastContainer } from "react-toastify";
+// import ButtonUp from "./ButtonUp/ButtonUp";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
-  // const screenWidth = document.documentElement.scrollHeight;
 
   const handleClickModal = (event) => {
     console.log(event.target.id);
@@ -29,6 +29,7 @@ function App() {
   const toggleModal = () => {
     setModalOpen(!modalOpen);
   };
+
   function scroll() {
     if (!modalOpen) {
       document.body.style.overflow = "hidden";
@@ -36,14 +37,17 @@ function App() {
     }
     document.body.style.overflow = "scroll";
   }
-
-  // window.addEventListener("scroll", (event) => {
-  //   // console.log(window.scrollY);
-  // });
+  const ButtonUpScroll = () =>
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) return console.log(true);
+      return console.log(false);
+    });
+  console.log(ButtonUpScroll());
 
   return (
     <>
       <ToastContainer />
+      {/* <ButtonUp /> */}
       <ModalConsultation
         isOpen={handleClickModal}
         toggleModal={toggleModal}

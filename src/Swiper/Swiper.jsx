@@ -9,7 +9,7 @@ import {
 } from "swiper/modules";
 
 import dataDogTrainerData from "../Data/dataTeam";
-import tabyretka from "../Data/tabyretka.png";
+import tabyretka from "../Data/tabyretka.jpg";
 import { styled } from "styled-components";
 import { nanoid } from "nanoid";
 import IconTeamSocComponent from "../IconComponent/IconSocTeam";
