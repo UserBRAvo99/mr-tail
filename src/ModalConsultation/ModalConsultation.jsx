@@ -25,12 +25,21 @@ const OverlayWrapper = styled.div`
         width: 100%;
         height: 100%;
         backdrop-filter: blur(10px);
+        opacity: 1;
+        visibility: visible;
         transition: all 0.8s ease 0s;
       `;
     }
     return css`
+      z-index: 100;
+      position: fixed;
+      display: block;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(10px);
       opacity: 0;
       visibility: hidden;
+      transition: all 0.8s ease 0s;
     `;
   }}
 `;
