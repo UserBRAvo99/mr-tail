@@ -5,21 +5,19 @@ import {
   A11y,
   Keyboard,
   Mousewheel,
-  Autoplay,
 } from "swiper/modules";
 
 import dataDogTrainerData from "../Data/dataTeam";
 import tabyretka from "../Data/tabyretka.jpg";
 import { styled } from "styled-components";
 import { nanoid } from "nanoid";
-import IconTeamSocComponent from "../IconComponent/IconSocTeam";
 
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/autoplay";
+// import "swiper/css/navigation";
 import "swiper/css/mousewheel";
 import "swiper/css/keyboard";
 import "swiper/css/pagination";
+import SwiperNawBtn from "./SwiperNawBtns";
 
 function SwiperBlock() {
   return (
@@ -31,18 +29,12 @@ function SwiperBlock() {
           A11y,
           Keyboard,
           Mousewheel,
-          Autoplay,
           Pagination,
         ]}
         spaceBetween={50}
         slidesPerView={1}
-        navigation
+        // navigation
         loop
-        autoplay={{
-          stopOnLastSlide: false,
-          disableOnInteraction: true,
-          pauseOnMouseEnter: true,
-        }}
         delay={800}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
@@ -51,22 +43,17 @@ function SwiperBlock() {
         <SwiperSlide>
           <Image src={tabyretka} />
         </SwiperSlide>
-        {dataDogTrainerData.map(
-          ({ photo, name, linkFacebook, linkInstagram }) => {
-            return (
-              <SwiperSlide key={nanoid()}>
-                <Image src={photo} alt={name} />
-                <WrapperInfoTrainer>
-                  <NameTitle>{name}</NameTitle>
-                  <IconTeamSocComponent
-                    facebook={linkFacebook}
-                    instagram={linkInstagram}
-                  />
-                </WrapperInfoTrainer>
-              </SwiperSlide>
-            );
-          }
-        )}
+        {dataDogTrainerData.map(({ photo, name }) => {
+          return (
+            <SwiperSlide key={nanoid()}>
+              <Image src={photo} alt={name} />
+              <WrapperInfoTrainer>
+                <NameTitle>{name}</NameTitle>
+              </WrapperInfoTrainer>
+            </SwiperSlide>
+          );
+        })}
+        <SwiperNawBtn />
       </Swiper>
     </WrapperSwiper>
   );
@@ -81,7 +68,7 @@ const WrapperSwiper = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 100%;
+  max-height: 694px;
   object-fit: cover;
 `;
 
@@ -94,15 +81,12 @@ const WrapperInfoTrainer = styled.div`
   right: 10px;
   align-items: center;
   width: calc(100% - 20px);
-  backdrop-filter: blur(10px);
+  background-color: rgba(128, 128, 128, 0.5);
   padding: 20px 0;
+  border-radius: 10px;
 `;
 const NameTitle = styled.h3`
   letter-spacing: 0.2em;
   font-size: 1.6rem;
   color: var(--basic-text-color-white);
-  margin-bottom: 16px;
-  &:last-child {
-    font-size: 16rem;
-  }
 `;

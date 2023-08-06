@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { styled } from "styled-components";
+import ButtonCloseModal from "../ModalConsultation/ButtonCloseModal";
 
 import { toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
-import ButtonCloseModal from "../ModalConsultation/ButtonCloseModal";
 
 const service = "service_4xr33lm";
 const template = "template_ajb7104";
@@ -60,16 +60,13 @@ function Consultation({ onClick, toggleModal }) {
         >
           <WrapperInput>
             <WrapperInputBlock>
-              {/* <label>Name</label> */}
               <Input type="name" name="user_name" placeholder="Ім'я" required />
-              {/* <label>Phone</label> */}
               <Input
                 type="phone"
                 name="user_phone"
                 placeholder="Мобільний номер"
                 required
               />
-              {/* <label>Email</label> */}
               <Input
                 type="email"
                 name="user_email"
@@ -78,21 +75,18 @@ function Consultation({ onClick, toggleModal }) {
               />
             </WrapperInputBlock>
             <WrapperInputBlock>
-              {/* <label>Dog name</label> */}
               <Input
                 type="name"
                 name="dog_name"
                 placeholder="Кличка собаки"
                 required
               />
-              {/* <label>Dog age</label> */}
               <Input
                 type="number"
                 name="dog_age"
                 placeholder="Вік собаки"
                 required
               />
-              {/* <label>Dog breed</label> */}
               <Input
                 type="text"
                 name="dog_breed"

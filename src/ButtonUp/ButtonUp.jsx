@@ -1,27 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { PiArrowBendLeftUpBold } from "react-icons/pi";
 import { css, styled } from "styled-components";
 
 function ButtonUp({ onClick, visible }) {
-  //   const [isVisibleBtn, setIsVisibleBtn] = useState(false);
-  //   const goToTop = () => {
-  //     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  //   };
-
-  //   const listenToScroll = () => {
-  //     let heightToHidden = 250;
-  //     const winScroll =
-  //       document.body.scrollTo || document.documentElement.scrollTop;
-  //     if (winScroll > heightToHidden) {
-  //       setIsVisibleBtn(true);
-  //     } else {
-  //       setIsVisibleBtn(false);
-  //     }
-  //   };
-  //   useEffect(() => {
-  //     window.addEventListener("scroll", listenToScroll);
-  //     return () => window.removeEventListener("scroll", listenToScroll);
-  //   }, []);
   return (
     <WrapperIcon onClick={onClick} visible={visible.toString()}>
       <PiArrowBendLeftUpBold />
@@ -42,7 +23,8 @@ const WrapperIcon = styled.div`
         display: flex;
         width: 40px;
         height: 40px;
-        background-color: aliceblue;
+        background-color: rgb(88, 50, 115);
+        color: white;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
@@ -59,7 +41,8 @@ const WrapperIcon = styled.div`
         display: flex;
         width: 40px;
         height: 40px;
-        background-color: aliceblue;
+        background-color: rgb(88, 50, 115);
+        color: white;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
@@ -69,16 +52,5 @@ const WrapperIcon = styled.div`
         opacity: 0;
       `;
     }
-  }}/* z-index: 50;
-  position: fixed;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  background-color: aliceblue;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  top: 90%;
-  right: 5%;
-  cursor: pointer; */
+  }}
 `;
