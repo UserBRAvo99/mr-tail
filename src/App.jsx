@@ -32,9 +32,9 @@ function App() {
     document.body.style.overflow = "scroll";
   }
 
-  window.addEventListener("scroll", (event) => {
-    // console.log(window.scrollY);
-  });
+  // window.addEventListener("scroll", (event) => {
+  //   // console.log(window.scrollY);
+  // });
 
   return (
     <>
