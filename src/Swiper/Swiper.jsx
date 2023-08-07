@@ -72,7 +72,6 @@ const Title = styled.h2`
 const WrapperSwiper = styled.div`
   display: flex;
   width: 100%;
-  max-height: 690px;
 `;
 
 const Image = styled.img`
@@ -84,7 +83,7 @@ const Image = styled.img`
 const WrapperInfoTrainer = styled.div`
   position: absolute;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding: 10px 0;
   top: 75%;
   right: 10px;
