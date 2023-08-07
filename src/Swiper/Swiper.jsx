@@ -13,63 +13,72 @@ import { styled } from "styled-components";
 import { nanoid } from "nanoid";
 
 import "swiper/css";
-// import "swiper/css/navigation";
 import "swiper/css/mousewheel";
 import "swiper/css/keyboard";
 import "swiper/css/pagination";
-import SwiperNawBtn from "./SwiperNawBtns";
+// import SwiperNawBtn from "./SwiperNawBtns";
 
 function SwiperBlock() {
   return (
-    <WrapperSwiper className="container">
-      <Swiper
-        modules={[
-          Navigation,
-          Pagination,
-          A11y,
-          Keyboard,
-          Mousewheel,
-          Pagination,
-        ]}
-        spaceBetween={50}
-        slidesPerView={1}
-        // navigation
-        loop
-        delay={800}
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => swiper}
-      >
-        <SwiperSlide>
-          <Image src={tabyretka} />
-        </SwiperSlide>
-        {dataDogTrainerData.map(({ photo, name }) => {
-          return (
-            <SwiperSlide key={nanoid()}>
-              <Image src={photo} alt={name} />
-              <WrapperInfoTrainer>
-                <NameTitle>{name}</NameTitle>
-              </WrapperInfoTrainer>
-            </SwiperSlide>
-          );
-        })}
-        <SwiperNawBtn />
-      </Swiper>
-    </WrapperSwiper>
+    <section id="team">
+      <Title>Команда</Title>
+      <WrapperSwiper className="container">
+        <Swiper
+          modules={[
+            Navigation,
+            Pagination,
+            A11y,
+            Keyboard,
+            Mousewheel,
+            Pagination,
+          ]}
+          spaceBetween={50}
+          slidesPerView={1}
+          loop
+          delay={800}
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => swiper}
+        >
+          <SwiperSlide>
+            <Image src={tabyretka} />
+          </SwiperSlide>
+          {dataDogTrainerData.map(({ photo, name }) => {
+            return (
+              <SwiperSlide key={nanoid()}>
+                <Image src={photo} alt={name} />
+                <WrapperInfoTrainer>
+                  <NameTitle>{name}</NameTitle>
+                </WrapperInfoTrainer>
+              </SwiperSlide>
+            );
+          })}
+          {/* <SwiperNawBtn /> */}
+        </Swiper>
+      </WrapperSwiper>
+    </section>
   );
 }
 
 export default SwiperBlock;
 
+const Title = styled.h2`
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+`;
+
 const WrapperSwiper = styled.div`
+  display: flex;
   width: 100%;
-  height: auto;
+  max-height: 690px;
 `;
 
 const Image = styled.img`
-  width: 100%;
-  max-height: 694px;
   object-fit: cover;
+  width: 100%;
+  height: auto;
 `;
 
 const WrapperInfoTrainer = styled.div`
