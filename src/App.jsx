@@ -13,10 +13,8 @@ import ButtonUp from "./ButtonUp/ButtonUp";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
-
-  //
-  //
   const [isVisibleBtn, setIsVisibleBtn] = useState(false);
+
   const goToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
@@ -34,10 +32,7 @@ function App() {
   };
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
-    // return () => window.removeEventListener("scroll", listenToScroll);
   }, []);
-  //
-  //
 
   const handleClickModal = (event) => {
     console.log(event.target.id);
