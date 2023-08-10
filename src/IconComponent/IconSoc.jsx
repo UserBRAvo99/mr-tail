@@ -14,58 +14,32 @@ export function IconSocComponent({ data, onClick }) {
     <WrapperList>
       <List>
         <Item>
-          <Link
-            href={facebook}
-            target="blank"
-            rel="noopener noreferrer"
-            // onClick={onClick}
-          >
+          <Link href={facebook} target="blank" rel="noopener noreferrer">
             <TiSocialFacebook />
           </Link>
         </Item>
         <Item>
-          <Link
-            href={instagram}
-            target="blank"
-            rel="noopener noreferrer"
-            // onClick={onClick}
-          >
+          <Link href={instagram} target="blank" rel="noopener noreferrer">
             <TiSocialInstagram />
           </Link>
         </Item>
         <Item>
-          <Link
-            href={telegram}
-            target="blank"
-            rel="noopener noreferrer"
-            // onClick={onClick}
-          >
+          <Link href={telegram} target="blank" rel="noopener noreferrer">
             <FaTelegramPlane />
           </Link>
         </Item>
         <Item>
-          <Link
-            href={"tel:" + phone}
-            // onClick={onClick}
-          >
+          <Link href={"tel:" + phone}>
             <FaPhoneAlt />
           </Link>
         </Item>
         <Item>
-          <Link
-            href={map}
-            target="blank"
-            rel="noopener noreferrer"
-            // onClick={onClick}
-          >
+          <Link href={map} target="blank" rel="noopener noreferrer">
             <FaMapMarkerAlt />
           </Link>
         </Item>
         <Item>
-          <Link
-            href={"mailto:" + mail}
-            // onClick={onClick}
-          >
+          <Link href={"mailto:" + mail}>
             <BiLogoGmail />
           </Link>
         </Item>
