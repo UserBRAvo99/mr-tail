@@ -1,13 +1,11 @@
 import { styled } from "styled-components";
 import { IconSocComponent } from "../IconComponent/IconSoc";
 import dataTrainingCenter from "../Data/dataTrainingCenter";
-// import OfferFooter from "./OfferFooter";
 
 function Footer() {
   return (
     <FooterWrapper id="footer">
       <ContentWrapper>
-        {/* <OfferFooter /> */}
         <WrapperContacts>
           <ContactsTitle>Контакти</ContactsTitle>
           <IconSocComponent data={dataTrainingCenter} />
