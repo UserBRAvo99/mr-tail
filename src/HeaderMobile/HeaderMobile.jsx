@@ -38,13 +38,7 @@ function HeaderMobile() {
         <Hero>
           <ButtonOpenMobileMenu onClick={handleClick} />
           <ImgHeader src={photoHeaderMobile} alt="dog" />
-          <ImageTitleWrapper>
-            {/* <ImageTitle>
-              Mr.Tail */}
-            {/* <IoPaw /> */}
-            {/* </ImageTitle> */}
-            {/* <Description>кінологічна спільнота</Description> */}
-          </ImageTitleWrapper>
+          <ImageTitleWrapper></ImageTitleWrapper>
         </Hero>
       </Header>
     </>
