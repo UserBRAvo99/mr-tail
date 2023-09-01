@@ -75,7 +75,8 @@ const WrapperSwiper = styled.div`
 `;
 
 const Image = styled.img`
-  object-fit: cover;
+  object-fit: contain;
+  object-position: right bottom;
   width: 100%;
   height: auto;
 `;
