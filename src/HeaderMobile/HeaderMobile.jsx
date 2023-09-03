@@ -80,7 +80,7 @@ const ImageTitleWrapper = styled.div`
   position: absolute;
   display: block;
   width: 100%;
-  bottom: 0;
+  bottom: 40px;
   left: 0;
   padding: 20px 15px;
   /* transform: translate(-50%, -50%); */

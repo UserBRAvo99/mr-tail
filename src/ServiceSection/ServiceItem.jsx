@@ -111,6 +111,7 @@ const WrapperInfo = styled.div`
   width: calc(100%);
   height: 100%;
   backdrop-filter: blur(10px);
+  transform: translate3d(0, 0, 0);
   padding: 10px;
 `;
 
