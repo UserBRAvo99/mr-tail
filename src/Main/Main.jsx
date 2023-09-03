@@ -6,8 +6,8 @@ import SwiperBlock from "../Swiper/Swiper";
 function Main({ onClick }) {
   return (
     <MainTag>
-      <SwiperBlock />
       <ServiceSection />
+      <SwiperBlock />
       <ButtonOpenModal onClick={onClick} />
     </MainTag>
   );

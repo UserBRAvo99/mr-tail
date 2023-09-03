@@ -8,7 +8,7 @@ import {
 } from "swiper/modules";
 
 import dataDogTrainerData from "../Data/dataTeam";
-import tabyretka from "../Data/tabyretka.jpg";
+import tabyretka from "../Data/MIL_1986-01.jpeg";
 import { styled } from "styled-components";
 import { nanoid } from "nanoid";
 
@@ -75,8 +75,9 @@ const WrapperSwiper = styled.div`
 `;
 
 const Image = styled.img`
+  object-position: bottom;
   object-fit: contain;
-  object-position: right bottom;
+
   width: 100%;
   height: auto;
 `;
