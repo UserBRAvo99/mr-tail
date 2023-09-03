@@ -6,7 +6,7 @@ import "../index.css";
 
 function ServiceItem({ data, onClick }) {
   return (
-    <WrapperBlock id="service">
+    <WrapperBlock id="service" className="container">
       <Title>Послуги</Title>
       <ListSection>
         {data.map(({ image, title, text, id }) => {
@@ -20,7 +20,11 @@ function ServiceItem({ data, onClick }) {
                 </TitleIcon>
               </WrapperTitle>
               <WrapperInfo>
-                <ParagraphInfo>{text}</ParagraphInfo>
+                <List>
+                  {text.map((e) => (
+                    <Item key={e}>{e}</Item>
+                  ))}
+                </List>
               </WrapperInfo>
             </ItemSection>
           );
@@ -33,7 +37,7 @@ function ServiceItem({ data, onClick }) {
 export default ServiceItem;
 
 const WrapperBlock = styled.div`
-  padding: 20px 10px;
+  /* padding: 20px 10px; */
 `;
 
 const Title = styled.h2`
@@ -72,7 +76,7 @@ const WrapperTitle = styled.div`
   display: flex;
   justify-content: center;
   position: absolute;
-  padding: 10px 0;
+  padding: 10px 0px;
   top: 80%;
   right: 10px;
   align-items: center;
@@ -110,8 +114,32 @@ const WrapperInfo = styled.div`
   padding: 10px;
 `;
 
-const ParagraphInfo = styled.p`
-  text-align: center;
-  align-items: center;
+// const ParagraphInfo = styled.p`
+//   text-align: center;
+//   align-items: center;
+//   color: var(--basic-text-color-white);
+// `;
+
+const List = styled.ul`
+  display: block;
+  padding: 20px;
+  /* list-style-type: circle; */
+`;
+
+const Item = styled.li`
+  list-style-type: disc;
+  letter-spacing: 0.15em;
   color: var(--basic-text-color-white);
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  /* &::before {
+    content: "";
+    display: flex;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--basic-text-color-white);
+  } */
 `;

@@ -76,19 +76,19 @@ const ImageTitleWrapper = styled.div`
   align-items: center;
 `;
 
-const ImageTitle = styled.h1`
-  display: flex;
-  position: relative;
-  gap: 10px;
-  justify-content: center;
-  color: rgb(88, 50, 115);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 50px;
-  font-weight: bold;
-`;
+// const ImageTitle = styled.h1`
+//   display: flex;
+//   position: relative;
+//   gap: 10px;
+//   justify-content: center;
+//   color: rgb(88, 50, 115);
+//   font-family: Georgia, "Times New Roman", Times, serif;
+//   font-size: 50px;
+//   font-weight: bold;
+// `;
 
-const Description = styled.p`
-  align-items: center;
-  text-align: center;
-  font-size: 20px;
-`;
+// const Description = styled.p`
+//   align-items: center;
+//   text-align: center;
+//   font-size: 20px;
+// `;

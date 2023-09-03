@@ -16,7 +16,6 @@ import "swiper/css";
 import "swiper/css/mousewheel";
 import "swiper/css/keyboard";
 import "swiper/css/pagination";
-// import SwiperNawBtn from "./SwiperNawBtns";
 
 function SwiperBlock() {
   return (
@@ -53,7 +52,6 @@ function SwiperBlock() {
               </SwiperSlide>
             );
           })}
-          {/* <SwiperNawBtn /> */}
         </Swiper>
       </WrapperSwiper>
     </section>
