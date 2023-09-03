@@ -1,26 +1,24 @@
 {
   "files": {
     "main.css": "/mr-tail/static/css/main.a084421b.css",
-    "main.js": "/mr-tail/static/js/main.23be6550.js",
+    "main.js": "/mr-tail/static/js/main.d1a3e1fd.js",
     "static/media/MIL_0743-01.jpeg": "/mr-tail/static/media/MIL_0743-01.8da878f708eb5244c0f6.jpeg",
     "static/media/MIL_0593-01.jpeg": "/mr-tail/static/media/MIL_0593-01.8e6c2a81330ee9ac4fb8.jpeg",
     "static/media/MIL_1131-01.jpeg": "/mr-tail/static/media/MIL_1131-01.595eba8b77ceaf216fc1.jpeg",
     "static/media/MIL_1986-01.jpeg": "/mr-tail/static/media/MIL_1986-01.96e1bde2d4dcce2ac937.jpeg",
+    "static/media/IMG_20230903_175211_527-01.jpeg": "/mr-tail/static/media/IMG_20230903_175211_527-01.34e8d4ae99c263ea6ed4.jpeg",
     "static/media/MIL_0950-03.jpeg": "/mr-tail/static/media/MIL_0950-03.7768b9e6448a05fd0c0d.jpeg",
     "static/media/MIL_1340-01.jpeg": "/mr-tail/static/media/MIL_1340-01.58c2d9223a896b11e60f.jpeg",
+    "static/media/IMG_20230903_175148_875-01.jpeg": "/mr-tail/static/media/IMG_20230903_175148_875-01.ff4a85c2663a86318b0f.jpeg",
+    "static/media/IMG_20230903_175158_644-01.jpeg": "/mr-tail/static/media/IMG_20230903_175158_644-01.b850b1e97b6f02ffb907.jpeg",
     "static/media/dog.jpg": "/mr-tail/static/media/dog.72dc3c6f7f4ccc1d8b6d.jpg",
-    "static/media/photoDog6.jpeg": "/mr-tail/static/media/photoDog6.fdc356d9f0dc02d8fe6a.jpeg",
     "static/media/photoDog4.jpg": "/mr-tail/static/media/photoDog4.40fade6ae508c9e340f1.jpg",
-    "static/media/photoDog1.jpg": "/mr-tail/static/media/photoDog1.23ccd62d2fa5cbafe849.jpg",
-    "static/media/photoDog5.jpg": "/mr-tail/static/media/photoDog5.04b4bb2fd83e607fc108.jpg",
-    "static/media/photoDog3.jpg": "/mr-tail/static/media/photoDog3.079e19c3315be814f72c.jpg",
-    "static/media/photoDog2.jpg": "/mr-tail/static/media/photoDog2.9630a25cac340985c3e2.jpg",
     "index.html": "/mr-tail/index.html",
     "main.a084421b.css.map": "/mr-tail/static/css/main.a084421b.css.map",
-    "main.23be6550.js.map": "/mr-tail/static/js/main.23be6550.js.map"
+    "main.d1a3e1fd.js.map": "/mr-tail/static/js/main.d1a3e1fd.js.map"
   },
   "entrypoints": [
     "static/css/main.a084421b.css",
-    "static/js/main.23be6550.js"
+    "static/js/main.d1a3e1fd.js"
   ]
 }
