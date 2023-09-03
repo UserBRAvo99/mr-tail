@@ -21,6 +21,7 @@ const ButtonOpenMenu = styled.button`
   border: none;
   background-color: inherit;
   color: rgb(39, 30, 59);
+  z-index: 1;
   cursor: pointer;
   & svg {
     width: 40px;

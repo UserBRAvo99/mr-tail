@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { styled } from "styled-components";
+import "animate.css";
 
 import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
@@ -38,7 +39,13 @@ function HeaderMobile() {
         <Hero>
           <ButtonOpenMobileMenu onClick={handleClick} />
           <ImgHeader src={photoHeaderMobile} alt="dog" />
-          <ImageTitleWrapper></ImageTitleWrapper>
+          <ImageTitleWrapper className="animate__animated animate__backInRight animate__delay-1.5s">
+            <Info>
+              Раді вітати в нашій кінологічній спільноті, яка є об'єднанням
+              професійних і досвідчених тренерок для собак! Навчаємо людей
+              правильно виховувати і розуміти своїх хвостиків.
+            </Info>
+          </ImageTitleWrapper>
         </Hero>
       </Header>
     </>
@@ -67,13 +74,22 @@ const ImgHeader = styled.img`
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  position: relative;
 `;
 const ImageTitleWrapper = styled.div`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 20px 15px;
+  /* transform: translate(-50%, -50%); */
   align-items: center;
+`;
+
+const Info = styled.p`
+  text-align: center;
+  font-size: 1.2em;
 `;
 
 // const ImageTitle = styled.h1`

@@ -62,7 +62,6 @@ export default SwiperBlock;
 
 const SwiperSection = styled.section`
   padding: 20px 0px;
-  /* box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39); */
 `;
 const Title = styled.h2`
   align-items: center;
