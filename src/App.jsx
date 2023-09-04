@@ -69,8 +69,8 @@ function App() {
       <TimeDiv>
         <HeaderMobile />
         <Main onClick={handleClickModal} />
+        <Footer />
       </TimeDiv>
-      <Footer />
     </>
   );
 }
