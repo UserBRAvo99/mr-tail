@@ -9,10 +9,10 @@ function ServiceItem({ data, onClick }) {
     <WrapperBlock id="service" className="container">
       <Title>Послуги</Title>
       <ListSection>
-        {data.map(({ image, title, text, id }) => {
+        {data.map(({ image, title, text, id, alt }) => {
           return (
             <ItemSection id={id} key={nanoid()} onClick={onClick}>
-              <Image src={image} alt="" />
+              <Image src={image} alt={alt} />
               <WrapperTitle>
                 <TitleSection>{title}</TitleSection>
                 <TitleIcon>

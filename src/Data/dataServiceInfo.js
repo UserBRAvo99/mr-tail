@@ -8,6 +8,7 @@ import photoDog3 from "./IMG_20230903_175211_527-01.jpg";
 const dataServiceInfo = [
   {
     image: photoDog1,
+    alt: "Цуценя лабрадора на помаранчевому повідці, лежить в залі.",
     id: 1,
     title: "Послух",
     text: [
@@ -24,6 +25,7 @@ const dataServiceInfo = [
   },
   {
     image: photoDog2,
+    alt: "Мальтіпу лежить на вулиці.",
     id: 2,
     title: "Виїзні заняття",
     text: [
@@ -34,6 +36,7 @@ const dataServiceInfo = [
   },
   {
     image: photoDog3,
+    alt: "Бордер Коллі спирається на руку своєї хазяйки.",
     id: 3,
     title: "Зоомагазин",
     text: [

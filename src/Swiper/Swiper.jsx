@@ -8,14 +8,14 @@ import {
 } from "swiper/modules";
 
 import dataDogTrainerData from "../Data/dataTeam";
-import tabyretka from "../Data/MIL_1986-01.jpeg";
+import tabyretka from "../Data/MIL_1986-01.jpg";
 import { styled } from "styled-components";
 import { nanoid } from "nanoid";
 
 import "swiper/css";
 import "swiper/css/mousewheel";
 import "swiper/css/keyboard";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 
 function SwiperBlock() {
   return (
@@ -29,23 +29,23 @@ function SwiperBlock() {
             A11y,
             Keyboard,
             Mousewheel,
-            Pagination,
+            // Pagination,
           ]}
           spaceBetween={50}
           slidesPerView={1}
           loop
           delay={800}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           onSwiper={(swiper) => swiper}
         >
           <SwiperSlide>
-            <Image src={tabyretka} />
+            <Image src={tabyretka} alt="Фото всієї команди." />
           </SwiperSlide>
-          {dataDogTrainerData.map(({ photo, name }) => {
+          {dataDogTrainerData.map(({ photo, name, alt }) => {
             return (
               <SwiperSlide key={nanoid()}>
-                <Image src={photo} alt={name} />
+                <Image src={photo} alt={alt} />
                 <WrapperInfoTrainer>
                   <NameTitle>{name}</NameTitle>
                 </WrapperInfoTrainer>

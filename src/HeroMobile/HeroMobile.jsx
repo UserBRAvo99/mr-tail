@@ -18,7 +18,10 @@ function HeroMobile() {
       className="container"
       onClick={handleClickHero}
     >
-      <Image src={hero} alt="" />
+      <Image
+        src={hero}
+        alt="На фото зображений логотип кінологічної спілноти."
+      />
       <WrapperTitle>
         <TitleSection>Про нас</TitleSection>
         <TitleIcon>

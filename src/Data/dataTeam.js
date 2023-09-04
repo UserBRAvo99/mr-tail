@@ -11,6 +11,7 @@ const dataDogTrainerData = [
     linkTelegram: "https://web.telegram.org/k/",
     tel: "",
     photo: lena,
+    alt: "На фото кінолог Олена Бондарчук",
     name: "Олена Бондарчук",
   },
   {
@@ -19,6 +20,7 @@ const dataDogTrainerData = [
     linkTelegram: "https://web.telegram.org/k/",
     tel: "",
     photo: olia,
+    alt: "На фото кінолог Оля Дронова",
     name: "Оля Дронова",
   },
   {
@@ -27,6 +29,7 @@ const dataDogTrainerData = [
     linkTelegram: "https://web.telegram.org/k/",
     tel: "",
     photo: tonia,
+    alt: "На фото кінолог Тоня Лапутько",
     name: "Тоня Лапутько",
   },
   {
@@ -35,6 +38,7 @@ const dataDogTrainerData = [
     linkTelegram: "https://web.telegram.org/k/",
     tel: "",
     photo: marisha,
+    alt: "На фото кінолог Марина Суслик",
     name: "Марина Суслик",
   },
   {
@@ -43,6 +47,7 @@ const dataDogTrainerData = [
     linkTelegram: "https://web.telegram.org/k/",
     tel: "",
     photo: julia,
+    alt: "На фото кінолог Юля Чекригіна",
     name: "Юля Чекригіна",
   },
 ];
