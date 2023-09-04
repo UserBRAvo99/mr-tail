@@ -18,6 +18,7 @@ function HeroMobile() {
       className="container"
       onClick={handleClickHero}
     >
+      <h2>Logo</h2>
       <Image
         src={hero}
         alt="На фото зображений логотип кінологічної спілноти."
@@ -65,7 +66,7 @@ const WrapperTitle = styled.div`
   cursor: pointer;
 `;
 
-const TitleSection = styled.h3`
+const TitleSection = styled.h2`
   margin: auto 0;
   letter-spacing: 0.2em;
   color: var(--basic-text-color-white);

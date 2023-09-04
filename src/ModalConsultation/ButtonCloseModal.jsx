@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 
 function ButtonCloseModal({ onClick }) {
   return (
-    <ButtonClose onClick={onClick} name="destiny" value="close modal">
+    <ButtonClose onClick={onClick} name="close modal">
       <IoPawOutline id="modalClose" />
     </ButtonClose>
   );
