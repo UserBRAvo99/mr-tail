@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/mr-tail/static/css/main.b9c39147.css",
-    "main.js": "/mr-tail/static/js/main.530e95a3.js",
+    "main.js": "/mr-tail/static/js/main.78d9b0e9.js",
     "static/media/MIL_1986-01.jpeg": "/mr-tail/static/media/MIL_1986-01.96e1bde2d4dcce2ac937.jpeg",
+    "static/media/dog.jpg": "/mr-tail/static/media/dog.72dc3c6f7f4ccc1d8b6d.jpg",
     "static/media/MIL_0593-01.jpg": "/mr-tail/static/media/MIL_0593-01.2ca79c9118d2c656568f.jpg",
     "static/media/MIL_0743-01.jpg": "/mr-tail/static/media/MIL_0743-01.938ef03eebdaee77742e.jpg",
     "static/media/MIL_1131-01.jpg": "/mr-tail/static/media/MIL_1131-01.1f5d0d6ca9ef42cd00c1.jpg",
@@ -14,10 +15,10 @@
     "static/media/Bitter-VariableFont_wght.ttf": "/mr-tail/static/media/Bitter-VariableFont_wght.2079c94d0d6679106bfe.ttf",
     "index.html": "/mr-tail/index.html",
     "main.b9c39147.css.map": "/mr-tail/static/css/main.b9c39147.css.map",
-    "main.530e95a3.js.map": "/mr-tail/static/js/main.530e95a3.js.map"
+    "main.78d9b0e9.js.map": "/mr-tail/static/js/main.78d9b0e9.js.map"
   },
   "entrypoints": [
     "static/css/main.b9c39147.css",
-    "static/js/main.530e95a3.js"
+    "static/js/main.78d9b0e9.js"
   ]
 }
