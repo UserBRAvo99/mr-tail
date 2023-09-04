@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/mr-tail/static/css/main.9a26bbd3.css",
-    "main.js": "/mr-tail/static/js/main.d79bbba4.js",
-    "static/media/MIL_0743-01.jpeg": "/mr-tail/static/media/MIL_0743-01.8da878f708eb5244c0f6.jpeg",
-    "static/media/MIL_0593-01.jpeg": "/mr-tail/static/media/MIL_0593-01.8e6c2a81330ee9ac4fb8.jpeg",
-    "static/media/MIL_1131-01.jpeg": "/mr-tail/static/media/MIL_1131-01.595eba8b77ceaf216fc1.jpeg",
+    "main.css": "/mr-tail/static/css/main.b9c39147.css",
+    "main.js": "/mr-tail/static/js/main.530e95a3.js",
     "static/media/MIL_1986-01.jpeg": "/mr-tail/static/media/MIL_1986-01.96e1bde2d4dcce2ac937.jpeg",
-    "static/media/IMG_20230903_175211_527-01.jpeg": "/mr-tail/static/media/IMG_20230903_175211_527-01.34e8d4ae99c263ea6ed4.jpeg",
-    "static/media/MIL_0950-03.jpeg": "/mr-tail/static/media/MIL_0950-03.7768b9e6448a05fd0c0d.jpeg",
-    "static/media/MIL_1340-01.jpeg": "/mr-tail/static/media/MIL_1340-01.58c2d9223a896b11e60f.jpeg",
-    "static/media/IMG_20230903_175148_875-01.jpeg": "/mr-tail/static/media/IMG_20230903_175148_875-01.ff4a85c2663a86318b0f.jpeg",
-    "static/media/IMG_20230903_175158_644-01.jpeg": "/mr-tail/static/media/IMG_20230903_175158_644-01.b850b1e97b6f02ffb907.jpeg",
-    "static/media/dog.jpg": "/mr-tail/static/media/dog.72dc3c6f7f4ccc1d8b6d.jpg",
+    "static/media/MIL_0593-01.jpg": "/mr-tail/static/media/MIL_0593-01.2ca79c9118d2c656568f.jpg",
+    "static/media/MIL_0743-01.jpg": "/mr-tail/static/media/MIL_0743-01.938ef03eebdaee77742e.jpg",
+    "static/media/MIL_1131-01.jpg": "/mr-tail/static/media/MIL_1131-01.1f5d0d6ca9ef42cd00c1.jpg",
+    "static/media/IMG_20230903_175158_644-01.jpg": "/mr-tail/static/media/IMG_20230903_175158_644-01.7ef4f26eff6ef70006bf.jpg",
+    "static/media/MIL_0950-03.jpg": "/mr-tail/static/media/MIL_0950-03.b61d329b648df865dca2.jpg",
+    "static/media/MIL_1340-01.jpg": "/mr-tail/static/media/MIL_1340-01.6aaf55fcbf571156ac03.jpg",
+    "static/media/IMG_20230903_175148_875-01.jpg": "/mr-tail/static/media/IMG_20230903_175148_875-01.317d7b0fa2233896e52e.jpg",
+    "static/media/IMG_20230903_175211_527-01.jpg": "/mr-tail/static/media/IMG_20230903_175211_527-01.9cb988daaa8bfff58fc0.jpg",
+    "static/media/Bitter-VariableFont_wght.ttf": "/mr-tail/static/media/Bitter-VariableFont_wght.2079c94d0d6679106bfe.ttf",
     "index.html": "/mr-tail/index.html",
-    "main.9a26bbd3.css.map": "/mr-tail/static/css/main.9a26bbd3.css.map",
-    "main.d79bbba4.js.map": "/mr-tail/static/js/main.d79bbba4.js.map"
+    "main.b9c39147.css.map": "/mr-tail/static/css/main.b9c39147.css.map",
+    "main.530e95a3.js.map": "/mr-tail/static/js/main.530e95a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a26bbd3.css",
-    "static/js/main.d79bbba4.js"
+    "static/css/main.b9c39147.css",
+    "static/js/main.530e95a3.js"
   ]
 }
