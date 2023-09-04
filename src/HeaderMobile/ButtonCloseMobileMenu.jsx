@@ -13,8 +13,8 @@ export default ButtonClose;
 
 const ButtonCloseMenu = styled.button`
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 20px;
   display: block;
   width: 40px;
   height: 40px;

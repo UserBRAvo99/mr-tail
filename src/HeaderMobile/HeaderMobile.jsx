@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
 import { styled } from "styled-components";
+import "../index.css";
 import "animate.css";
 
 import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
-import photoHeaderMobile from "../Data/dog.jpg";
+// import photoHeaderMobile from "../Data/dog.jpg";
 
 function HeaderMobile() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,17 +37,23 @@ function HeaderMobile() {
     <>
       <MobileMenuSlide onClick={handleClick} open={mobileMenuOpen} />
       <Header>
-        <Hero>
-          <ButtonOpenMobileMenu onClick={handleClick} />
-          <ImgHeader src={photoHeaderMobile} alt="dog" />
-          <ImageTitleWrapper className="animate__animated animate__backInRight animate__delay-1.5s">
+        <Wrapper>
+          <TitleHeader className="font-family-bitter">
+            Mr<span>.Tail</span>
+          </TitleHeader>
+        </Wrapper>
+        {/* <Hero> */}
+        <ButtonOpenMobileMenu onClick={handleClick} />
+
+        {/* <ImgHeader src={photoHeaderMobile} alt="dog" /> */}
+        {/* <ImageTitleWrapper className="animate__animated animate__backInRight animate__delay-1.5s">
             <Info>
               Раді вітати в нашій кінологічній спільноті, яка є об'єднанням
               професійних і досвідчених тренерок для собак! Навчаємо людей
               правильно виховувати і розуміти своїх хвостиків.
             </Info>
-          </ImageTitleWrapper>
-        </Hero>
+          </ImageTitleWrapper> */}
+        {/* </Hero> */}
       </Header>
     </>
   );
@@ -56,41 +63,48 @@ export default HeaderMobile;
 
 const Header = styled.header`
   display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
   max-width: 600px;
-  height: auto;
   margin: 0 auto;
   margin-bottom: 30px;
   position: relative;
+  border-bottom: solid 1px rgb(213, 182, 226);
+  background-color: #9d85c8;
 `;
+const Wrapper = styled.div``;
+const TitleHeader = styled.h1`
+  font-family: "Bitter", serif;
+  font-weight: bold;
+`;
+// const Hero = styled.div`
+//   display: flex;
+//   width: 100%;
+//   height: auto;
+//   position: relative;
+// `;
 
-const Hero = styled.div`
-  display: flex;
-  width: 100%;
-  height: auto;
-  position: relative;
-`;
+// const ImgHeader = styled.img`
+//   width: 100%;
+//   height: 100vh;
+//   object-fit: cover;
+//   position: relative;
+// `;
+// const ImageTitleWrapper = styled.div`
+//   position: absolute;
+//   display: block;
+//   width: 100%;
+//   bottom: 60px;
+//   left: 0;
+//   padding: 20px 15px;
+//   /* transform: translate(-50%, -50%); */
+//   align-items: center;
+// `;
 
-const ImgHeader = styled.img`
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  position: relative;
-`;
-const ImageTitleWrapper = styled.div`
-  position: absolute;
-  display: block;
-  width: 100%;
-  bottom: 60px;
-  left: 0;
-  padding: 20px 15px;
-  /* transform: translate(-50%, -50%); */
-  align-items: center;
-`;
-
-const Info = styled.p`
-  text-align: center;
-  font-size: 1.2em;
-`;
+// const Info = styled.p`
+//   text-align: center;
+//   font-size: 1.2em;
+// `;
 
 // const ImageTitle = styled.h1`
 //   display: flex;

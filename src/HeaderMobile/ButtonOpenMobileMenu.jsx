@@ -12,9 +12,9 @@ function ButtonOpenMobileMenu({ onClick }) {
 export default ButtonOpenMobileMenu;
 
 const ButtonOpenMenu = styled.button`
-  position: absolute;
+  /* position: absolute;
   top: 15px;
-  right: 15px;
+  right: 15px; */
   display: block;
   width: 40px;
   height: 40px;

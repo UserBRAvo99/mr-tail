@@ -20,7 +20,7 @@ function App() {
   };
 
   const listenToScroll = () => {
-    let heightToHidden = 250;
+    let heightToHidden = 200;
 
     const winScroll = document.documentElement.scrollTop;
 
@@ -35,7 +35,6 @@ function App() {
   }, []);
 
   const handleClickModal = (event) => {
-    console.log(event.target.id);
     if (
       event.target.id === "modal" ||
       event.target.id === "modalOpen" ||

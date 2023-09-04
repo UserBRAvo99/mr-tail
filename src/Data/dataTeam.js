@@ -1,8 +1,8 @@
-import lena from "./MIL_1131-01.jpeg";
-import julia from "./MIL_1340-01.jpeg";
-import tonia from "./MIL_0950-03.jpeg";
-import olia from "./MIL_0593-01.jpeg";
-import marisha from "./MIL_0743-01.jpeg";
+import lena from "./MIL_1131-01.jpg";
+import julia from "./MIL_1340-01.jpg";
+import tonia from "./MIL_0950-03.jpg";
+import olia from "./MIL_0593-01.jpg";
+import marisha from "./MIL_0743-01.jpg";
 
 const dataDogTrainerData = [
   {

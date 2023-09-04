@@ -14,8 +14,6 @@ export default ButtonUp;
 
 const WrapperIcon = styled.div`
   ${({ visible }) => {
-    console.log(visible);
-
     if (visible === "true") {
       return css`
         z-index: 50;
@@ -36,7 +34,7 @@ const WrapperIcon = styled.div`
     }
     if (visible === "false") {
       return css`
-        z-index: 50;
+        /* z-index: 50;
         position: fixed;
         display: flex;
         width: 40px;
@@ -49,7 +47,8 @@ const WrapperIcon = styled.div`
         top: 90%;
         right: 5%;
         cursor: pointer;
-        opacity: 0;
+        opacity: 0; */
+        display: none;
       `;
     }
   }}

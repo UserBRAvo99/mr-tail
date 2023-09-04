@@ -1,6 +1,6 @@
-import photoDog1 from "./IMG_20230903_175158_644-01.jpeg";
-import photoDog2 from "./IMG_20230903_175148_875-01.jpeg";
-import photoDog3 from "./IMG_20230903_175211_527-01.jpeg";
+import photoDog1 from "./IMG_20230903_175158_644-01.jpg";
+import photoDog2 from "./IMG_20230903_175148_875-01.jpg";
+import photoDog3 from "./IMG_20230903_175211_527-01.jpg";
 // import photoDog4 from "./photoDog4.jpg";
 // import photoDog5 from "./photoDog5.jpg";
 // import photoDog6 from "./photoDog6.jpeg";
