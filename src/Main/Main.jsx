@@ -8,8 +8,9 @@ function Main({ onClick }) {
   return (
     <MainTag>
       <HeroMobile />
-      <ServiceSection />
       <SwiperBlock />
+      <ServiceSection />
+
       <ButtonOpenModal onClick={onClick} />
     </MainTag>
   );

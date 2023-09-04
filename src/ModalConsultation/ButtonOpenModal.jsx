@@ -4,7 +4,12 @@ import { styled } from "styled-components";
 function ButtonOpenModal({ onClick }) {
   return (
     <WrapperButton id="сonsultation">
-      <Button onClick={onClick} id="modalOpen">
+      <Button
+        onClick={onClick}
+        id="modalOpen"
+        name="destiny"
+        value="open modal"
+      >
         Консультація
       </Button>
     </WrapperButton>
