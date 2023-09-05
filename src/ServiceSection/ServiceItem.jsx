@@ -36,9 +36,7 @@ function ServiceItem({ data, onClick }) {
 
 export default ServiceItem;
 
-const WrapperBlock = styled.div`
-  /* padding: 20px 10px; */
-`;
+const WrapperBlock = styled.div``;
 
 const Title = styled.h2`
   align-items: center;
@@ -115,16 +113,9 @@ const WrapperInfo = styled.div`
   padding: 10px;
 `;
 
-// const ParagraphInfo = styled.p`
-//   text-align: center;
-//   align-items: center;
-//   color: var(--basic-text-color-white);
-// `;
-
 const List = styled.ul`
   display: block;
   padding: 20px;
-  /* list-style-type: circle; */
 `;
 
 const Item = styled.li`
@@ -135,12 +126,4 @@ const Item = styled.li`
   &:last-child {
     margin-bottom: 0;
   }
-  /* &::before {
-    content: "";
-    display: flex;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: var(--basic-text-color-white);
-  } */
 `;

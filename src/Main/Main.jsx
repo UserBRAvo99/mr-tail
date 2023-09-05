@@ -10,7 +10,6 @@ function Main({ onClick }) {
       <HeroMobile />
       <SwiperBlock />
       <ServiceSection />
-
       <ButtonOpenModal onClick={onClick} />
     </MainTag>
   );
