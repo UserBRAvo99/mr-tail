@@ -18,7 +18,7 @@ function HeroMobile() {
       className="container"
       onClick={handleClickHero}
     >
-      <h2>Logo</h2>
+      {/* <h2>Logo</h2> */}
       <Image
         src={hero}
         alt="На фото зображений логотип кінологічної спілноти."
@@ -84,7 +84,6 @@ const TitleIcon = styled.span`
 
 const WrapperInfo = styled.div`
   position: absolute;
-  display: none;
   flex-direction: column;
   justify-content: space-around;
   top: 0;
@@ -94,6 +93,7 @@ const WrapperInfo = styled.div`
   backdrop-filter: blur(10px);
   transform: translate3d(0, 0, 0);
   padding: 30px;
+  display: none;
 `;
 
 const Info = styled.p`

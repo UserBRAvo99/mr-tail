@@ -38,7 +38,7 @@ function HeaderMobile() {
       <MobileMenuSlide onClick={handleClick} open={mobileMenuOpen} />
       <Header>
         <Wrapper>
-          <TitleHeader className="font-family-bitter">
+          <TitleHeader className="font-family-bitter-bold">
             Mr<span>.Tail</span>
           </TitleHeader>
         </Wrapper>
