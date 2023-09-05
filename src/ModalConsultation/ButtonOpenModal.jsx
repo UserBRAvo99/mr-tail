@@ -5,7 +5,7 @@ function ButtonOpenModal({ onClick }) {
   return (
     <WrapperButton id="сonsultation">
       <Button onClick={onClick} id="modalOpen" name="open modal">
-        Консультація
+        Заявка на консультацію
       </Button>
     </WrapperButton>
   );

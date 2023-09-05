@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 
-import HeaderMobile from "./HeaderMobile/HeaderMobile";
-
-import Main from "./Main/Main";
-
-import "./App.css";
-import Footer from "./Footer/Footer";
-import { styled } from "styled-components";
-import ModalConsultation from "./ModalConsultation/ModalConsultation";
-import { ToastContainer } from "react-toastify";
 import ButtonUp from "./ButtonUp/ButtonUp";
+import ModalConsultation from "./ModalConsultation/ModalConsultation";
+import HeaderMobile from "./HeaderMobile/HeaderMobile";
+import Main from "./Main/Main";
+import Footer from "./Footer/Footer";
+
+import { ToastContainer } from "react-toastify";
+
+import { styled } from "styled-components";
+import "./App.css";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -57,6 +57,29 @@ function App() {
     document.body.style.overflow = "scroll";
   }
 
+  function handleClickHero(e) {
+    if (e.currentTarget.children[3].style.display !== "flex") {
+      return (e.currentTarget.children[3].style.display = "flex");
+    }
+    if (e.currentTarget.children[3].style.display === "flex") {
+      return (e.currentTarget.children[3].style.display = "none");
+    }
+  }
+
+  function handleClickService(event) {
+    const childrenList = [...event.currentTarget.parentElement.children];
+    const childId = event.currentTarget.id;
+    childrenList.forEach((e) => {
+      if (e.children[2].style.display === "flex") {
+        return (e.children[2].style.display = "none");
+      }
+      if (e.id === childId) {
+        return (e.children[2].style.display = "flex");
+      }
+      return (e.children[2].style.display = "none");
+    });
+  }
+
   return (
     <>
       <ToastContainer />
@@ -68,7 +91,11 @@ function App() {
       />
       <TimeDiv>
         <HeaderMobile />
-        <Main onClick={handleClickModal} />
+        <Main
+          openModal={handleClickModal}
+          hero={handleClickHero}
+          serviceItem={handleClickService}
+        />
         <Footer />
       </TimeDiv>
     </>

@@ -21,7 +21,7 @@ const WrapperIcon = styled.div`
         display: flex;
         width: 40px;
         height: 40px;
-        background-color: rgb(88, 50, 115);
+        background-color: rgba(88, 50, 115, 0.7);
         color: white;
         align-items: center;
         justify-content: center;
@@ -30,11 +30,12 @@ const WrapperIcon = styled.div`
         right: 5%;
         cursor: pointer;
         opacity: 1;
+        transition: all 0.4s ease 0s;
       `;
     }
     if (visible === "false") {
       return css`
-        /* z-index: 50;
+        z-index: 50;
         position: fixed;
         display: flex;
         width: 40px;
@@ -47,8 +48,9 @@ const WrapperIcon = styled.div`
         top: 90%;
         right: 5%;
         cursor: pointer;
-        opacity: 0; */
-        display: none;
+        opacity: 0;
+        transition: all 0.4s ease 0s;
+        visibility: hidden;
       `;
     }
   }}

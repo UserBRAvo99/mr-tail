@@ -4,13 +4,13 @@ import ButtonOpenModal from "../ModalConsultation/ButtonOpenModal";
 import SwiperBlock from "../Swiper/Swiper";
 import HeroMobile from "../HeroMobile/HeroMobile";
 
-function Main({ onClick }) {
+function Main({ openModal, hero, serviceItem }) {
   return (
     <MainTag>
-      <HeroMobile />
+      <HeroMobile onClick={hero} />
       <SwiperBlock />
-      <ServiceSection />
-      <ButtonOpenModal onClick={onClick} />
+      <ServiceSection serviceItem={serviceItem} />
+      <ButtonOpenModal onClick={openModal} />
     </MainTag>
   );
 }

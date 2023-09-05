@@ -3,22 +3,18 @@ import { MdReadMore } from "react-icons/md";
 import { styled } from "styled-components";
 import hero from "../Data/dog.jpg";
 
-function HeroMobile() {
-  function handleClickHero(e) {
-    if (e.currentTarget.children[2].style.display !== "flex") {
-      return (e.currentTarget.children[2].style.display = "flex");
-    }
-    if (e.currentTarget.children[2].style.display === "flex") {
-      return (e.currentTarget.children[2].style.display = "none");
-    }
-  }
+function HeroMobile({ onClick }) {
+  // function handleClickHero(e) {
+  //   if (e.currentTarget.children[3].style.display !== "flex") {
+  //     return (e.currentTarget.children[3].style.display = "flex");
+  //   }
+  //   if (e.currentTarget.children[3].style.display === "flex") {
+  //     return (e.currentTarget.children[3].style.display = "none");
+  //   }
+  // }
   return (
-    <WrapperBlock
-      id="heroMobile"
-      className="container"
-      onClick={handleClickHero}
-    >
-      {/* <h2>Logo</h2> */}
+    <WrapperBlock id="heroMobile" className="container" onClick={onClick}>
+      <h2 className="hidden_title">Logo</h2>
       <Image
         src={hero}
         alt="На фото зображений логотип кінологічної спілноти."
