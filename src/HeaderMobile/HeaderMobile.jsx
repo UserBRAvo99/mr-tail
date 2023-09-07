@@ -6,32 +6,21 @@ import "animate.css";
 
 import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
-// import photoHeaderMobile from "../Data/dog.jpg";
+import { scrollStop, toggle } from "../utilities/utilities";
 
 function HeaderMobile() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  function handleClick(event) {
-    event.preventDefault();
+  const handleClick = (e) => {
+    e.preventDefault();
     if (
-      event.currentTarget.tagName === "BUTTON" ||
-      event.currentTarget.nodeName === "A"
+      e.currentTarget.tagName === "BUTTON" ||
+      e.currentTarget.nodeName === "A"
     ) {
-      toggleMenuOpen();
-      scroll();
+      setMobileMenuOpen(toggle(mobileMenuOpen));
+      scrollStop(mobileMenuOpen);
     }
-  }
-
-  function toggleMenuOpen() {
-    setMobileMenuOpen(!mobileMenuOpen);
-  }
-  function scroll() {
-    if (!mobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-      return;
-    }
-    document.body.style.overflow = "scroll";
-  }
+  };
 
   return (
     <>
