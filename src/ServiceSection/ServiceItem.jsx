@@ -16,7 +16,7 @@ function ServiceItem({ data, onClick }) {
         {data.map(({ image, title, text, id, alt }) => {
           return (
             <ItemSection id={id} key={nanoid()} onClick={onClick}>
-              <Image src={image} alt={alt} />
+              <Image loading="lazy" src={image} alt={alt} />
               <WrapperTitle>
                 <TitleSection>{title}</TitleSection>
                 <TitleIcon>
@@ -60,6 +60,7 @@ const ItemSection = styled.li`
   display: flex;
   width: 100%;
   height: auto;
+  background-color: gray;
   box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39);
   cursor: pointer;
   margin-bottom: 30px;
@@ -70,7 +71,7 @@ const ItemSection = styled.li`
 
 const Image = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
 `;
 
