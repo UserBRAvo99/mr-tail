@@ -10,29 +10,35 @@ import { ToastContainer } from "react-toastify";
 
 import { styled } from "styled-components";
 import "./App.css";
+import { useInView } from "react-intersection-observer";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
-  const [isVisibleBtn, setIsVisibleBtn] = useState(false);
+  // const [isVisibleBtn, setIsVisibleBtn] = useState(false);
+
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  // console.log(!inView);
 
   const goToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
-  const listenToScroll = () => {
-    let heightToHidden = 200;
+  // const listenToScroll = () => {
+  //   let heightToHidden = 200;
 
-    const winScroll = document.documentElement.scrollTop;
+  //   const winScroll = document.documentElement.scrollTop;
 
-    if (winScroll > heightToHidden) {
-      setIsVisibleBtn(true);
-    } else {
-      setIsVisibleBtn(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
-  }, []);
+  //   if (winScroll > heightToHidden) {
+  //     setIsVisibleBtn(true);
+  //   } else {
+  //     setIsVisibleBtn(false);
+  //   }
+  // };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", listenToScroll);
+  // }, []);
 
   const handleClickModal = (event) => {
     if (
@@ -83,14 +89,17 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <ButtonUp onClick={goToTop} visible={isVisibleBtn} />
+      <ButtonUp onClick={goToTop} visible={!inView} />
       <ModalConsultation
         isOpen={handleClickModal}
         toggleModal={toggleModal}
         modal={modalOpen}
       />
       <TimeDiv>
-        <HeaderMobile />
+        <div ref={ref}>
+          <HeaderMobile />
+        </div>
+
         <Main
           openModal={handleClickModal}
           hero={handleClickHero}
