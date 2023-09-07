@@ -8,8 +8,8 @@ function Main({ openModal, hero, serviceItem }) {
   return (
     <MainTag>
       <HeroMobile onClick={hero} />
-      <ServiceSection serviceItem={serviceItem} />
       <SwiperBlock />
+      <ServiceSection serviceItem={serviceItem} />
       <ButtonOpenModal onClick={openModal} />
     </MainTag>
   );

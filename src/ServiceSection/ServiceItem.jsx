@@ -3,8 +3,12 @@ import { MdReadMore } from "react-icons/md";
 import { styled } from "styled-components";
 
 import "../index.css";
+import { useInView } from "react-intersection-observer";
 
 function ServiceItem({ data, onClick }) {
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
   return (
     <WrapperBlock id="service" className="container">
       <Title>Послуги</Title>
