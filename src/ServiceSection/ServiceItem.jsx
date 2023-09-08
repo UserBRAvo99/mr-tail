@@ -1,14 +1,11 @@
+import React from "react";
 import { nanoid } from "nanoid";
 import { MdReadMore } from "react-icons/md";
 import { styled } from "styled-components";
 
 import "../index.css";
-import { useInView } from "react-intersection-observer";
 
 function ServiceItem({ data, onClick }) {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  });
   return (
     <WrapperBlock id="service" className="container">
       <Title>Послуги</Title>
@@ -16,7 +13,7 @@ function ServiceItem({ data, onClick }) {
         {data.map(({ image, title, text, id, alt }) => {
           return (
             <ItemSection id={id} key={nanoid()} onClick={onClick}>
-              <Image loading="lazy" src={image} alt={alt} />
+              <Image src={image} alt={alt} />
               <WrapperTitle>
                 <TitleSection>{title}</TitleSection>
                 <TitleIcon>

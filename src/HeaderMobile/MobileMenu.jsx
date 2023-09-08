@@ -1,6 +1,9 @@
+import { lazy } from "react";
 import { css, styled } from "styled-components";
-import ButtonClose from "./ButtonCloseMobileMenu";
-import MobileMenuNav from "./MobileMenuNav";
+// import ButtonClose from "./ButtonCloseMobileMenu";
+// import MobileMenuNav from "./MobileMenuNav";
+const ButtonClose = lazy(() => import("./ButtonCloseMobileMenu"));
+const MobileMenuNav = lazy(() => import("./MobileMenuNav"));
 
 function MobileMenuSlide({ onClick, open }) {
   return (

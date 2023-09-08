@@ -8,7 +8,7 @@ import {
 } from "swiper/modules";
 
 import dataDogTrainerData from "../Data/dataTeam";
-import tabyretka from "../Data/MIL_1986-01.jpg";
+import tabyretka from "../Data/MIL_1986-01.webp";
 import { styled } from "styled-components";
 import { nanoid } from "nanoid";
 

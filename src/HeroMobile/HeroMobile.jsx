@@ -1,19 +1,23 @@
 import React from "react";
 import { MdReadMore } from "react-icons/md";
 import { styled } from "styled-components";
-import hero from "../Data/dog.jpg";
+import hero from "../Data/dog.webp";
 
-function HeroMobile({ onClick }) {
-  // function handleClickHero(e) {
-  //   if (e.currentTarget.children[3].style.display !== "flex") {
-  //     return (e.currentTarget.children[3].style.display = "flex");
-  //   }
-  //   if (e.currentTarget.children[3].style.display === "flex") {
-  //     return (e.currentTarget.children[3].style.display = "none");
-  //   }
-  // }
+function HeroMobile() {
+  function handleClickHero(e) {
+    if (e.currentTarget.children[3].style.display !== "flex") {
+      return (e.currentTarget.children[3].style.display = "flex");
+    }
+    if (e.currentTarget.children[3].style.display === "flex") {
+      return (e.currentTarget.children[3].style.display = "none");
+    }
+  }
   return (
-    <WrapperBlock id="heroMobile" className="container" onClick={onClick}>
+    <WrapperBlock
+      id="heroMobile"
+      className="container"
+      onClick={handleClickHero}
+    >
       <h2 className="hidden_title">Logo</h2>
       <Image
         src={hero}

@@ -36,31 +36,6 @@ function App() {
     }
   };
 
-  const handleClickHero = (e) => {
-    const childrenElement = e.currentTarget.children[3].style.display;
-    if (childrenElement !== "flex") {
-      return (e.currentTarget.children[3].style.display = "flex");
-    }
-    if (childrenElement === "flex") {
-      return (e.currentTarget.children[3].style.display = "none");
-    }
-  };
-
-  const handleClickService = (event) => {
-    const childrenList = [...event.currentTarget.parentElement.children];
-    const childId = event.currentTarget.id;
-
-    childrenList.forEach((e) => {
-      if (e.children[2].style.display === "flex") {
-        return (e.children[2].style.display = "none");
-      }
-      if (e.id === childId) {
-        return (e.children[2].style.display = "flex");
-      }
-      return (e.children[2].style.display = "none");
-    });
-  };
-
   return (
     <>
       <ToastContainer />
@@ -75,11 +50,7 @@ function App() {
           <HeaderMobile />
         </div>
 
-        <Main
-          openModal={handleClickModal}
-          hero={handleClickHero}
-          serviceItem={handleClickService}
-        />
+        <Main openModal={handleClickModal} />
         <Footer />
       </TimeDiv>
     </>
