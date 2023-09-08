@@ -1,23 +1,29 @@
 {
   "files": {
     "main.css": "/mr-tail/static/css/main.878533a5.css",
-    "main.js": "/mr-tail/static/js/main.a7c2d56e.js",
-    "static/media/MIL_1986-01.jpg": "/mr-tail/static/media/MIL_1986-01.26633c9a262d5b18668c.jpg",
-    "static/media/MIL_0593-01.jpg": "/mr-tail/static/media/MIL_0593-01.57b161303b65958c9ca6.jpg",
-    "static/media/MIL_0950-03.jpg": "/mr-tail/static/media/MIL_0950-03.c4eab482039054d2e037.jpg",
-    "static/media/MIL_1340-01.jpg": "/mr-tail/static/media/MIL_1340-01.7d270c3386fc4fb06fea.jpg",
-    "static/media/MIL_0743-01.jpg": "/mr-tail/static/media/MIL_0743-01.c61b581e99f03fda5598.jpg",
-    "static/media/MIL_1131-01.jpg": "/mr-tail/static/media/MIL_1131-01.f08b3d53c23a666885d6.jpg",
-    "static/media/IMG_20230903_175148_875-01.jpg": "/mr-tail/static/media/IMG_20230903_175148_875-01.4a0b3b29d37bfbb7682d.jpg",
-    "static/media/IMG_20230903_175158_644-01.jpg": "/mr-tail/static/media/IMG_20230903_175158_644-01.6cc5c3b8aa39f78e65ce.jpg",
-    "static/media/IMG_20230903_175211_527-01.jpg": "/mr-tail/static/media/IMG_20230903_175211_527-01.ca7662f3a69986b364ce.jpg",
-    "static/media/dog.jpg": "/mr-tail/static/media/dog.3f378f01139df1c41fbe.jpg",
+    "main.js": "/mr-tail/static/js/main.dfa497b7.js",
+    "static/js/559.2827db5a.chunk.js": "/mr-tail/static/js/559.2827db5a.chunk.js",
+    "static/js/139.b17b984f.chunk.js": "/mr-tail/static/js/139.b17b984f.chunk.js",
+    "static/js/667.e1d941f0.chunk.js": "/mr-tail/static/js/667.e1d941f0.chunk.js",
+    "static/media/MIL_1986-01.webp": "/mr-tail/static/media/MIL_1986-01.26d35eddbebe577111c6.webp",
+    "static/media/MIL_0593-01.webp": "/mr-tail/static/media/MIL_0593-01.2be6619ae4b10cf0382b.webp",
+    "static/media/MIL_0950-03.webp": "/mr-tail/static/media/MIL_0950-03.773d677ba123f685d01a.webp",
+    "static/media/MIL_1340-01.webp": "/mr-tail/static/media/MIL_1340-01.79c65eb14497522c78fe.webp",
+    "static/media/MIL_0743-01.webp": "/mr-tail/static/media/MIL_0743-01.e170bd8bef4a5dcefceb.webp",
+    "static/media/MIL_1131-01.webp": "/mr-tail/static/media/MIL_1131-01.da48cb53c385d50b85af.webp",
+    "static/media/IMG_20230903_175158_644-01.webp": "/mr-tail/static/media/IMG_20230903_175158_644-01.6711b897e708fd8063f6.webp",
+    "static/media/IMG_20230903_175148_875-01.webp": "/mr-tail/static/media/IMG_20230903_175148_875-01.fe33a17f30a5d44529a5.webp",
+    "static/media/IMG_20230903_175211_527-01.webp": "/mr-tail/static/media/IMG_20230903_175211_527-01.cebb8a0066207c81018a.webp",
+    "static/media/dog.webp": "/mr-tail/static/media/dog.b5339d5663917fc16258.webp",
     "index.html": "/mr-tail/index.html",
     "main.878533a5.css.map": "/mr-tail/static/css/main.878533a5.css.map",
-    "main.a7c2d56e.js.map": "/mr-tail/static/js/main.a7c2d56e.js.map"
+    "main.dfa497b7.js.map": "/mr-tail/static/js/main.dfa497b7.js.map",
+    "559.2827db5a.chunk.js.map": "/mr-tail/static/js/559.2827db5a.chunk.js.map",
+    "139.b17b984f.chunk.js.map": "/mr-tail/static/js/139.b17b984f.chunk.js.map",
+    "667.e1d941f0.chunk.js.map": "/mr-tail/static/js/667.e1d941f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.878533a5.css",
-    "static/js/main.a7c2d56e.js"
+    "static/js/main.dfa497b7.js"
   ]
 }

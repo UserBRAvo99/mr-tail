@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmr_tail=self.webpackChunkmr_tail||[]).push([[559],{559:function(n,i,t){t.r(i);var o,r=t(168),e=t(71),l=t(867),c=t(184);i.default=function(n){var i=n.onClick;return(0,c.jsx)(h,{onClick:i,children:(0,c.jsx)(e.Oik,{})})};var h=l.zo.button(o||(o=(0,r.Z)(["\n  position: absolute;\n  top: 10px;\n  right: 20px;\n  display: block;\n  width: 40px;\n  height: 40px;\n  border: none;\n  background-color: inherit;\n  color: rgb(39, 30, 59);\n  & svg {\n    width: 40px;\n    height: 40px;\n  }\n"])))}}]);
+//# sourceMappingURL=559.2827db5a.chunk.js.map
