@@ -3,16 +3,17 @@ import { useInView } from "react-intersection-observer";
 import { styled } from "styled-components";
 
 import ButtonUp from "./ButtonUp/ButtonUp";
-import ModalConsultation from "./ModalConsultation/ModalConsultation";
 import HeaderMobile from "./HeaderMobile/HeaderMobile";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
 
-import { scrollStop, toggle } from "./utilities/utilities";
+import { scrollStop } from "./utilities/utilities";
 
 import { ToastContainer } from "react-toastify";
 
 import "./App.css";
+
+import Modal from "./ModalConsultationClient/ModalConsultation";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -31,28 +32,32 @@ function App() {
       event.target.id === "modalOpen" ||
       event.target.id === "modalClose"
     ) {
-      setModalOpen(toggle(modalOpen));
+      // setModalOpen(toggle(modalOpen));
+      toggleModal();
       scrollStop(modalOpen);
     }
+  };
+
+  const toggleModal = () => {
+    return setModalOpen(!modalOpen);
   };
 
   return (
     <>
       <ToastContainer />
       <ButtonUp onClick={goToTop} visible={!inView} />
-      <ModalConsultation
-        isOpen={handleClickModal}
-        toggleModal={toggle(modalOpen)}
-        modal={modalOpen}
-      />
       <TimeDiv>
         <div ref={ref}>
           <HeaderMobile />
         </div>
-
         <Main openModal={handleClickModal} />
         <Footer />
       </TimeDiv>
+      <Modal
+        isOpen={handleClickModal}
+        toggleModal={toggleModal}
+        modal={modalOpen}
+      />
     </>
   );
 }

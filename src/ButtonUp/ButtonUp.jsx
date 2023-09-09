@@ -16,7 +16,7 @@ const WrapperIcon = styled.div`
   ${({ visible }) => {
     if (visible === "true") {
       return css`
-        z-index: 50;
+        z-index: 10;
         position: fixed;
         display: flex;
         width: 40px;
@@ -35,7 +35,6 @@ const WrapperIcon = styled.div`
     }
     if (visible === "false") {
       return css`
-        z-index: 50;
         position: fixed;
         display: flex;
         width: 40px;

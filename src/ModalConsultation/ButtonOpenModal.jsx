@@ -27,4 +27,5 @@ const Button = styled.button`
   color: white;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 `;
