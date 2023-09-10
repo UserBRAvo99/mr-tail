@@ -63,16 +63,16 @@ const OverlayWrapper = styled.div`
         transition: all 0.8s ease 0s;
       `;
     }
-    return css`
-      position: fixed;
-      top: 0;
-      display: block;
-      width: 100%;
-      height: 100%;
-      backdrop-filter: blur(10px);
-      opacity: 0;
-      transition: all 0.8s ease 0s;
-    `;
+    // return css`
+    //   position: fixed;
+    //   top: 0;
+    //   display: block;
+    //   width: 100%;
+    //   height: 100%;
+    //   backdrop-filter: blur(10px);
+    //   opacity: 0;
+    //   transition: all 0.8s ease 0s;
+    // `;
   }}
 `;
 

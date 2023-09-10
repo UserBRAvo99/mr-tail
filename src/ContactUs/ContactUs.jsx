@@ -159,4 +159,5 @@ const ButtonForm = styled.input`
   border: solid 2px rgb(157, 133, 200);
   background-color: rgb(88, 50, 115);
   color: white;
+  cursor: pointer;
 `;

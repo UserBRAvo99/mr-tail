@@ -7,7 +7,7 @@ import { BiLogoGmail } from "react-icons/bi";
 
 import "../VariableColor/var.css";
 
-export function IconSocComponent({ data, onClick }) {
+export function IconSocComponent({ data }) {
   const { facebook, instagram, telegram, phone, map, mail } = data;
 
   return (
@@ -149,6 +149,7 @@ const Link = styled.a`
   &:hover,
   &:focus {
     /* background-color: var(--hover-color-dog-trainer-icon); */
-    color: var(--hover-bg-color-dog-trainer-icon);
+    color: white;
+    border: solid 1px white;
   }
 `;

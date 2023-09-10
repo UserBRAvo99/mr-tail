@@ -22,6 +22,7 @@ const ButtonClose = styled.button`
   border: none;
   background-color: inherit;
   color: rgb(39, 30, 59);
+  cursor: pointer;
   & svg {
     width: 40px;
     height: 40px;
