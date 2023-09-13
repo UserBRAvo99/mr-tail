@@ -7,7 +7,7 @@ function Footer() {
     <FooterWrapper id="footer">
       <ContentWrapper>
         <WrapperContacts>
-          <ContactsTitle>Контакти</ContactsTitle>
+          <ContactsTitle className="hidden_title">Контакти</ContactsTitle>
           <IconSocComponent data={dataTrainingCenter} />
         </WrapperContacts>
       </ContentWrapper>
