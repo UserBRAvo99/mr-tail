@@ -58,7 +58,7 @@ const ItemSection = styled.li`
   width: 100%;
   height: auto;
   background-color: gray;
-  box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39);
+  /* box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.39); */
   cursor: pointer;
   margin-bottom: 30px;
   &:last-child {
